@@ -1,0 +1,204 @@
+---
+// src/layouts/BaseLayout.astro
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Neurobotics | Edge-Native Autonomous Systems</title>
+    <link rel="icon" type="image/svg+xml" href="/neurobotics-owl-favicon.svg" />
+    <style is:global>
+body {
+        margin: 0;
+        background-color: #050511; 
+        color: white;
+        font-family: sans-serif;
+      }
+      
+      /* --- THE GAP KILLER --- */
+      main {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+      }
+      
+      /* --- THE STICKY HEADER --- */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo-text {
+        color: #0a1128;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .tm-mark {
+    font-size: 0.4em; /* Uses the same relative sizing magic! */
+    vertical-align: super;
+  }
+
+      /* --- NAVIGATION MENU --- */
+      .menu-links {
+        display: flex;
+        align-items: center;
+      }
+
+      .menu-links a, .dropbtn {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #0a1128;
+        font-weight: bold;
+        font-size: 1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: sans-serif;
+      }
+
+      /* --- PURE CSS DROPDOWN --- */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none; /* This HIDES the box by default */
+        position: absolute;
+        right: 0; 
+        background-color: white;
+        min-width: 220px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1001;
+        border-top: 3px solid #0a1128;
+      }
+
+      .dropdown-content a {
+        color: #0a1128;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-left: 0; 
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      /* When you hover over the 'dropdown' area, it changes 'display: none' to 'display: block' */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      /* --- FOOTER STYLES --- */
+
+      /* Centers the entire footer layout */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the logo and text blocks horizontally */
+    text-align: center;  /* Ensures the text inside those blocks is perfectly centered */
+    padding: 60px 20px 40px 20px; /* Gives the footer some nice breathing room */
+    background-color: #000000;
+  }
+  
+  /* 1. TAMES THE GIANT OWL! */
+  .footer-logo {
+    width: 70px; /* Forces the image to be a polite, normal size */
+    height: auto;
+    margin-bottom: 15px; /* Adds space between the owl and the text */
+  }
+  
+  /* 2. Bumps up the company text */
+  .company-info {
+    font-size: 1.25rem; 
+    font-weight: 400; 
+    margin-bottom: 15px;
+    margin-top: 0; /* Keeps it tight to the logo */
+  }
+
+  /* 3. Fixes the default dark blue link color */
+  .footer-email {
+    color: #ffffff; 
+    font-size: 1.1rem;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+  }
+
+  .footer-email:hover {
+    color: #0096ff; /* Electric blue hover effect */
+  }
+
+  /* 4. Dims the copyright text */
+  .copyright-text {
+    color: #888888; 
+    font-size: 0.85rem; 
+    margin-top: 25px; 
+  }
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="/assets/images/neurobotics-bubo-neural-owl-logo-best.png" alt="Neurobotics Logo" height="60">
+        <span class="logo-text">Neurobotics<span class="tm-mark">&trade;</span></span>
+      </div>
+      
+     <nav class="menu-links">
+      <a href="/">Home</a>
+      <a href="/neurotronic-brain">Neurotronic Brain</a>
+      <a href="/white-papers">The White Papers</a> 
+      <a href="/#safety-first">Safety First</a>
+      <a href="/bubo-sbalf">Bubo SBALF</a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">More ▾</button>
+        <div class="dropdown-content">
+          <a href="/renshaw-theory">Renshaw Theory</a>
+          <a href="/#publications-demos">Publications & Demos</a>
+          <a href="/about-us">About Us</a>
+          <a href="/services">Services</a>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+    <main>
+      <slot /> 
+    </main>
+
+   <footer>
+    <!-- Keep your logo exactly as you have it -->
+    <img src="/assets/images/neurobotics-bubo-neural-owl-logo-best.png" alt="Neurobotics Logo" class="footer-logo">
+    
+    <!-- Added a class here to make it bigger -->
+    <p class="company-info">Neurobotics, LLC<br>Yale, Oklahoma</p>
+    
+    <!-- Added a class here to fix the dark blue color -->
+    <a href="mailto:info@NeuroboticsSci.ai" class="footer-email">info@NeuroboticsSci.ai</a>
+    
+    <!-- Make sure this class matches the CSS exactly -->
+    <p class="copyright-text">© 2026 Kenneth & Shannon Renshaw / Neurobotics</p>
+  </footer>
+  </body>
+</html>

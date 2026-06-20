@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="News & Press - Neurobotics">
+  
+  <section class="news-hero">
+    <img src="/assets/images/threed-abstract-background-futuristic-neon-city-background-tech.jpg" alt="Futuristic Neon Tech City" class="hero-image">
+  </section>
+
+  <section class="news-content">
+    <h1 class="page-title">News & Press</h1>
+    
+    <div class="news-grid">
+      
+      <div class="news-card">
+        <img src="/assets/images/reddit-logo.jpeg" alt="Code Background" class="card-image">
+        <a href="https://www.reddit.com/r/alife/comments/1sg2w0f/seeking_architectural_critique_we_just/" target="_blank" rel="noopener noreferrer" class="resource-button">
+          Reddit
+        </a>
+      </div>
+
+      <div class="news-card">
+        <img src="/assets/images/hacker-news-logo.png" alt="Purple Data Stream" class="card-image">
+        <a href="https://news.ycombinator.com/item?id=47680990" target="_blank" rel="noopener noreferrer" class="resource-button">
+          Hacker News
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* --- HERO IMAGE STYLING --- */
+  .news-hero {
+    width: 100%;
+    max-height: 500px; /* Keeps the image from taking over the whole screen */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image stretches beautifully across monitors */
+  }
+
+  /* --- CONTENT BACKGROUND & TITLE --- */
+  .news-content {
+    background-color: #03030a;
+    padding: 60px 40px 120px;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 70px;
+    letter-spacing: 0.02em;
+  }
+
+  /* --- GRID LAYOUT --- */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 900px; /* Keeps the two cards nicely centered and sized */
+    margin: 0 auto;
+  }
+
+  .news-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between the image and the button */
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #121f35;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  }
+
+  /* --- SURGICAL STRIKE BUTTON STYLING --- */
+  .resource-button {
+    background-color: #0b111e;
+    color: #00e5ff !important;
+    border: 1px solid #203554;
+    border-radius: 4px;
+    padding: 18px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: block;      
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+
+  .resource-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37; /* Signature Gold */
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+    transform: translateY(-4px);
+  }
+
+  /* --- RESPONSIVE MOBILE ADJUSTMENT --- */
+  @media (max-width: 768px) {
+    .news-grid {
+      grid-template-columns: 1fr; /* Stacks the cards on small screens */
+      gap: 40px;
+    }
+    
+    .page-title {
+      font-size: 2.8rem;
+    }
+  }
+</style>

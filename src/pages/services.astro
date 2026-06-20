@@ -1,0 +1,353 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Services & Solutions - Neurobotics">
+  
+  <!-- ========================================== -->
+  <!-- HERO SECTION (Earth Video Background)      -->
+  <!-- ========================================== -->
+  <section class="video-header">
+    <video autoplay loop muted playsinline class="bg-video">
+      <!-- Make sure your video file is saved here! -->
+      <source src="/assets/videos/earth-bright-sun-on-horizon-space-rotate.mp4" type="video/mp4">
+    </video>
+    
+    <div class="header-overlay">
+      <h1 class="hero-title">Neurobotics<span class="tm-mark">&trade;</span> Solutions</h1>
+      <p class="hero-subtitle">We have the solution to your problem. We are Neurobotics&trade;.</p>
+      <p class="hero-tagline">The Future Starts Here. Real. Now.</p>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SERVICES SECTION (Circuit Video Background)-->
+  <!-- ========================================== -->
+  <section class="services-section">
+    <video autoplay loop muted playsinline class="bg-video">
+      <!-- Make sure your video file is saved here! -->
+      <source src="/assets/videos/blue-microchip-energy-no-zoom.mp4" type="video/mp4">
+    </video>
+
+    <div class="services-overlay">
+      <div class="services-grid">
+        
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <img src="/assets/images/lecture-microphone.jpg" alt="Microphone" class="card-image">
+          <div class="card-content">
+            <h3>Neurobotics Lecture</h3>
+            <p>Invite the creators of Neurobotics&trade; to speak to your group remotely, anywhere in the world.</p>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <img src="/assets/images/blue-cyber-human-iris-eye-closeup.jpg" alt="Robotic Eye" class="card-image">
+          <div class="card-content">
+            <h3>Neurobotics Demo</h3>
+            <p>Learn about Silicon Based Artificial Lifeforms (SBALF), and how it all works from the creator and architect.</p>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <img src="/assets/images/black-code-terminal-sample.jpg" alt="Computer Code" class="card-image">
+          <div class="card-content">
+            <h3>Tiered Licensing</h3>
+            <p>Neurobotics has the solution for your project. We provide what you have been seeking.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- CONTACT FORM SECTION                       -->
+  <!-- ========================================== -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2 class="form-title">Request Information & Quote</h2>
+      
+      <form action="mailto:info@NeuroboticsSci.ai" method="POST" enctype="text/plain" class="quote-form">
+        
+        <!-- Row 1 -->
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="First Name">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="Last Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="Email" required>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="Phone">
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="Company">
+        </div>
+        <div class="form-group">
+          <label for="position">Position</label>
+          <input type="text" id="position" name="Position">
+        </div>
+
+        <!-- Row 3 (Message spans 2 columns, Dropdown takes 1) -->
+        <div class="form-group message-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="inquiringAbout">Inquiring About</label>
+          <select id="inquiringAbout" name="Inquiring About">
+            <option value="">Choose an option</option>
+            <option value="Lecture">Lecture</option>
+            <option value="Demo">Demo</option>
+            <option value="Tiered Licensing">Tiered Licensing</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-group">
+          <button type="submit" class="resource-button">Send</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* --- GLOBAL VIDEO BACKGROUND RULES --- */
+  .video-header, .services-section {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    opacity: 0.6; /* Dims the video slightly so text is readable */
+  }
+
+  /* --- HEADER OVERLAY --- */
+  .video-header {
+    height: 60vh;
+    background-color: #000; /* Fallback color */
+  }
+
+  .header-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .tm-mark {
+    font-size: 0.4em;
+    vertical-align: super;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+  }
+
+  .hero-tagline {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00e5ff;
+    letter-spacing: 0.1em;
+  }
+
+  /* --- SERVICES GRID OVERLAY --- */
+  .services-section {
+    padding: 100px 40px;
+    background-color: #03030a; /* Fallback */
+  }
+
+  .services-overlay {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    width: 100%;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  /* Engineering-Grade Service Cards */
+  .service-card {
+    background-color: #050911;
+    border: 1px solid #121f35;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #00e5ff; /* Sleek electric blue divider */
+  }
+
+  .card-content {
+    padding: 40px 30px;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .card-content h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+  }
+
+  .card-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #b0c4de;
+    margin: 0;
+  }
+
+  /* --- CONTACT FORM SECTION --- */
+  .contact-section {
+    background-color: #0b111e;
+    padding: 80px 40px;
+    border-top: 1px solid #121f35;
+  }
+
+  .contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .form-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+  }
+
+  .quote-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns to match Wix layout */
+    gap: 25px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Makes the message box span across 2 of the 3 columns */
+  .message-group {
+    grid-column: span 2; 
+  }
+
+  .submit-group {
+    grid-column: span 3; /* Spans the whole bottom row */
+    display: flex;
+    justify-content: flex-end; /* Aligns button to the right */
+    margin-top: 20px;
+  }
+
+  /* Input Styling matching the engineering theme */
+  label {
+    color: #8fa0af;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  input, select, textarea {
+    background-color: #03030a;
+    border: 1px solid #203554;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    transition: border-color 0.3s ease;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #00e5ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+  }
+
+  /* SBALF Style Submit Button */
+  .resource-button {
+    background-color: #0b111e;
+    color: #ffffff;
+    border: 1px solid #203554;
+    border-radius: 4px;
+    padding: 15px 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .resource-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37; 
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+    transform: translateY(-2px);
+  }
+
+  /* --- RESPONSIVE MOBILE ADJUSTMENTS --- */
+  @media (max-width: 900px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* Stacks cards on small screens */
+    }
+    
+    .quote-form {
+      grid-template-columns: 1fr; /* Stacks form inputs */
+    }
+
+    .message-group, .submit-group {
+      grid-column: span 1;
+    }
+
+    .submit-group {
+      justify-content: center;
+    }
+  }
+</style>

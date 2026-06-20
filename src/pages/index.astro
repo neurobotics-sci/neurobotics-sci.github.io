@@ -1,0 +1,626 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  
+ <section class="top-banner-section">
+    <div class="banner-content fade-in">
+      <img src="/assets/images/neurobotics-bubo-neural-owl-logo-best.png" alt="Neurobotics Big Logo" class="hero-side-logo">
+      
+      <div class="hero-text-block">
+        <h1 class="hero-brand">Neurobotics<span class="tm-mark">&trade;</span></h1>
+        <p class="hero-tagline">The Future Starts Here. Real. Now.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee-section">
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span>THE FUTURE STARTS HERE <img src="/assets/images/neurotronic-brain-transparent-blue.png" class="marquee-icon" alt="Brain Icon"></span>
+        <span>THE FUTURE STARTS HERE <img src="/assets/images/neurotronic-brain-transparent-blue.png" class="marquee-icon" alt="Brain Icon"></span>
+        <span>THE FUTURE STARTS HERE <img src="/assets/images/neurotronic-brain-transparent-blue.png" class="marquee-icon" alt="Brain Icon"></span>
+        <span>THE FUTURE STARTS HERE <img src="/assets/images/neurotronic-brain-transparent-blue.png" class="marquee-icon" alt="Brain Icon"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid-section">
+    <div class="grid-container fade-in-delayed">
+      <div class="grid-item">
+        <img src="/assets/images/digital-brain-model-surrounded-by-futuristic-circuit-crop.jpeg" alt="Golden Brain on Circuit">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/images/futuristic-robot-touching-finger-to-human-finger-connecting-crop.jpeg" alt="Robot and Human Hand">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/images/glowing-blue-gold-neural-network-crop-saturation-crop.jpeg" alt="Blue Neural Network">
+      </div>
+    </div>
+  </section>
+
+  <section class="dawn-section">
+    <video autoplay loop muted playsinline class="dawn-video">
+      <source src="/assets/videos/earth-horizon-bright-light-sparkles-spinning-space.mp4" type="video/mp4" />
+    </video>
+
+    <div class="dawn-content">
+      <div class="dawn-text">
+        <h2>Neurobotics<span class="tm-mark">&trade;</span></h2>
+        <h3>The Dawn of a New Era</h3>
+        <hr>
+        <p>What if an autonomous system didn't just process data, but possessed the extreme resilience of a biological nervous system? Neurobotics engineers Silicon-Based Artificial Life Forms (SBALF)—fully deterministic, edge-native cognitive architectures built directly onto bare-metal hardware. Powered by 10,000-D vector algebra and autopoietic loops, our systems operate 100% off-grid with mathematically verifiable certainty.</p>
+      </div>
+      <div class="dawn-image">
+         <img src="/assets/images/neurobotics-bubo-neural-owl-logo-best.png" alt="Neurobotics Logo" class="floating-logo">
+      </div>
+    </div>
+  </section>
+
+  <section id="safety-first" class="safety-section">
+    <div class="safety-container">
+      
+      <div class="safety-header">
+        <img src="/assets/images/disa-stig-100-percent-badge.jpg" alt="DISA STIG 100%" class="stig-badge">
+        <h2 class="safety-title">Safety & Governance:<br>Aerospace-Grade Cognitive Security</h2>
+      </div>
+
+      <hr class="safety-divider">
+
+      <div class="safety-content-row">
+        
+        <div class="safety-graphic-side">
+          <img src="/assets/images/blue-nerual-shield-security-crop.jpeg" alt="Neural Security Shield" class="shield-image">
+        </div>
+
+        <div class="safety-text-side">
+          <p>Before architecting the Renshaw-SBALF Matrix, our Chief Science Officer helped engineer the TCAS-II (Traffic Collision Avoidance System)—the definitive global standard in deterministic aviation safety. In aerospace and defense, a safety override cannot be a probabilistic suggestion; it must be a mathematical certainty. This uncompromising, zero-fail engineering philosophy is the foundation of Neurobotics. We believe that true autonomy must be grounded in absolute, localized hardware safety, followed by mathematically verifiable cognitive governance and strict military-grade cybersecurity.</p>
+          
+          <p>The SBALF 5-Tier Architecture operates under this strict, defense-grade framework:</p>
+
+          <h3 class="tier-title">Hardware-Enforced Determinism & Physical Veto</h3>
+          <p>Drawing directly from deep-space and aviation safety principles, true physical safety requires unyielding physical constraints. If the architecture encounters corrupted vectors, unverified states, or Electronic Warfare (EW) interference, the system triggers a Tier 1 physical FPGA loop integration, providing a ~3ms physical override immune to software hacking. As the ultimate failsafe, the chassis features an IEC60204-1 Category 1 physical kill switch that severs the 12V servo rail via hardware relay—a strict bare-metal constraint that no software bug can override.</p>
+
+          <h3 class="tier-title">Intrinsic Cognitive Security</h3>
+          <p>While the hardware layer guarantees physical safety, our cognitive alignment strategy is governed by immutable, mathematically verified constraints. Instead of relying on vulnerable cloud-based guardrails or probabilistic Large Language Models (LLMs), the S-BUD architecture enforces operational integrity at the substrate level. Running natively on a monolithic, bare-metal RISC-V substrate, the Vector Symbolic Cognitive Core (VSCC) utilizes 10,000-D vector algebra. This provides a deterministic cognitive boundary that strictly adheres to mission parameters and is mathematically immune to prompt injection, data poisoning, or adversarial corruption.</p>
+
+          <h3 class="tier-title">Defense-Grade Zero-Trust Enclave</h3>
+          <p>To bridge the gap between independent machine execution and human intent, the architecture employs a strictly gated, air-gapped command hierarchy. The system operates on a "Deny All, Complain Loudly" paradigm running natively on a DISA STIG-compliant RHEL 9.8 foundation. Security is mathematically enforced via FIPS 140-3 cryptography and SELinux Mandatory Access Controls (MAC). Furthermore, we have embedded the entire DevSecOps pipeline—including Perforce, Gitea, Jenkins, JFrog Artifactory vault, Syft SBOM generation, and rootless containers—directly into the hardware, creating a self-contained, impenetrable supply chain for absolute data sovereignty and sovereign command authority.</p>
+        </div>
+      </div>
+      
+      <div class="video-text-wrapper">
+        <video autoplay loop muted playsinline class="text-video-bg">
+          <source src="/assets/videos/prism-cool-colors-gradient-banner-background.mp4" type="video/mp4" />
+        </video>
+        
+        <div class="knockout-overlay">
+          <h1 class="video-masked-text">ESSE QUAM VIDERI</h1>
+        </div>
+      </div>
+
+    </div> </section>
+  <section id="neurotronic-brain" class="brain-section">
+    <div class="brain-container">
+
+      <div class="brain-video-side">
+        <video autoplay loop muted playsinline class="brain-video">
+          <source src="/assets/videos/blue-glowing-brain-blue-light-electric-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="brain-text-side">
+        
+        <div class="brain-knockout-wrapper">
+          <video autoplay loop muted playsinline class="brain-text-video">
+            <source src="/assets/videos/teal-cyan-waves-gradient-background.mp4" type="video/mp4" />
+          </video>
+          <div class="brain-knockout-overlay">
+            <h1 class="brain-title">The<br>Neurotronic<br>Brain</h1>
+          </div>
+        </div>
+
+        <h2 class="brain-subtitle">Deterministic Thinking &<br>Completely Autonomous</h2>
+
+        <a href="/neurotronic-brain" class="gradient-button">Discover The Future Here</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS & DEMOS SECTION -->
+  <section id="publications-demos" class="pub-demo-section">
+    <div class="pub-demo-container">
+      
+      <h2 class="pub-demo-title">PUBLICATIONS & DEMOS</h2>
+
+      <div class="pub-grid">
+        <!-- Item 1 -->
+        <div class="pub-card">
+          <!-- Update with your actual image file names -->
+          <img src="/assets/images/computer-screen-displaying-code-in-a-city-setting-crop.jpg" alt="GitHub Repository" class="pub-image">
+          <a href="/github-repository" class="pub-button">GitHub Repository</a>
+        </div>
+        
+        <!-- Item 2 -->
+        <div class="pub-card">
+          <img src="/assets/images/robot-hand-neurobotics-math.jpeg" alt="The White Papers" class="pub-image">
+          <a href="/white-papers" class="pub-button">The White Papers</a>
+        </div>
+        
+        <!-- Item 3 -->
+        <div class="pub-card">
+          <img src="/assets/images/math-mind-universe-red.png" alt="Zenodo Institutional Repository" class="pub-image">
+          <a href="/zenodo-repository" class="pub-button">Zenodo Institutional Repository</a>
+        </div>
+        
+        <!-- Item 4 -->
+        <div class="pub-card">
+          <img src="/assets/images/threed-abstract-background-futuristic-neon-city-background-tech.jpg" alt="News & Press" class="pub-image">
+          <a href="/news-publications" class="pub-button">News & Press</a>
+        </div>
+        
+        <!-- Item 5 -->
+        <div class="pub-card">
+          <img src="/assets/images/death-of-the-data-centers-image.png" alt="The Death of the Data Centers" class="pub-image">
+          <a href="/assets/docs/death-of-the-data-center-paper.pdf" class="pub-button" target="_blank">THE DEATH OF THE DATA CENTERS</a>
+        </div>
+        
+        <!-- Item 6 -->
+        <div class="pub-card">
+          <img src="/assets/images/colorful-code-neural-network-brain.jpg" alt="Neurobotics OSS Droid Demo" class="pub-image">
+          <a href="/droid-demo" class="pub-button">Neurobotics OSS 'Droid' Demo</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Decorative Video Bar Divider -->
+    <div class="decorative-video-bar">
+      <video autoplay loop muted playsinline class="circuit-video">
+        <!-- Update with your actual rotating circuit video file name -->
+        <source src="/assets/videos/blue-microchip-energy-zoom-in.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+ /* --- TOP BANNER STYLES --- */
+  .top-banner-section {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url('/assets/images/gradient-blue-background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding-top: 20px; 
+  }
+
+  .banner-content { 
+    display: flex; 
+    align-items: center; 
+    gap: 40px; 
+    position: relative; 
+    z-index: 1; 
+  }
+
+  .hero-side-logo {
+    width: 200px; 
+  }
+
+  .hero-text-block {
+    text-align: left; 
+  }
+
+  .hero-brand { 
+	font-family: 'Aldrich', sans-serif;
+    font-size: 6rem; 
+    margin: 0; 
+    letter-spacing: 3px; 
+    text-shadow: 3px 4px 10px rgba(0,0,0,0.8); 
+  }
+
+.tm-mark {
+    font-size: 0.4em; /* This means "Always be 40% of the size of the text next to you!" */
+    vertical-align: super;
+  }
+
+  .hero-tagline { 
+    font-size: 2rem; 
+    color: #e0e0e0;
+    margin: 10px 0 0 0; 
+    letter-spacing: 1px; 
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.8); 
+  }
+  /* --- SCROLLING MARQUEE STYLES --- */
+  .marquee-section {
+    background-color: #000; padding: 20px 0; overflow: hidden;
+    border-top: 2px solid #1a1a3a; border-bottom: 2px solid #1a1a3a;
+  }
+  .marquee-container { width: 100%; overflow: hidden; white-space: nowrap; }
+  .marquee-content { display: inline-block; animation: marqueeScroll 20s linear infinite; }
+  .marquee-content span { font-size: 3rem; font-weight: bold; letter-spacing: 5px; margin-right: 50px; display: inline-flex; align-items: center; }
+  .marquee-icon { height: 50px; margin-left: 50px; opacity: 0.7; }
+  @keyframes marqueeScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  /* --- GRID SECTION STYLES --- */
+  .grid-section { padding: 60px 40px; background-color: #050511; }
+  .grid-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1400px; margin: 0 auto; }
+  .grid-item img { width: 100%; height: auto; border-radius: 5px; box-shadow: 0px 4px 15px rgba(0,0,0,0.6); border: 1px solid #1a1a3a; }
+
+  /* --- DAWN SECTION STYLES (Now with Video Support) --- */
+  .dawn-section {
+    padding: 100px 50px;
+    position: relative;
+    overflow: hidden; /* Keeps the video contained inside this section */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dawn-video {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover; /* Ensures the video fills the space without stretching */
+    z-index: -1; 
+    opacity: 0.6; /* Adjust this number (0.1 to 1.0) to make the video lighter or darker */
+  }
+
+  .dawn-content {
+    display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; width: 100%; position: relative; z-index: 1;
+  }
+  .dawn-text { width: 55%; background: rgba(0,0,0,0.5); padding: 40px; border-radius: 10px; /* Added a slight dark box behind text so it's readable over the video */ }
+  .dawn-text h2 { font-size: 3.5rem; margin-bottom: 5px; }
+  .dawn-text h3 { font-size: 1.8rem; font-weight: normal; margin-top: 0; color: #ddd; }
+  .dawn-text hr { border-color: #555; margin: 20px 0; }
+  .dawn-text p { font-size: 1.1rem; line-height: 1.8; color: #eee; }
+  
+  .floating-logo { width: 350px; animation: float 6s ease-in-out infinite; }
+  @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
+
+  /* --- ANIMATIONS --- */
+  .fade-in { animation: fadeInAnimation 1.5s ease-out forwards; opacity: 0; }
+  .fade-in-delayed { animation: fadeInAnimation 1.5s ease-out 0.5s forwards; opacity: 0; }
+  @keyframes fadeInAnimation { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
+
+/* --- SAFETY SECTION STYLES --- */
+  /* --- SAFETY SECTION STYLES --- */
+  .safety-section {
+    background-color: #03030a; /* Deep, dark space background */
+    padding: 80px 40px;
+    color: #e0e0e0;
+    position: relative; /* CRITICAL: Tells the background overlay to stay inside this box */
+    z-index: 1; /* Creates a proper stacking context for your text */
+  }
+
+  /* --- FULL-SECTION SHIELD BACKGROUND --- */
+  /* 1. WE DELETED THE .safety-section::before BLOCK entirely! 
+     No more giant background ghost shield. 
+  */
+
+  /* --- LEAVE EVERYTHING BELOW THIS EXACTLY THE SAME --- */
+
+  .safety-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .safety-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .stig-badge {
+    width: 150px;
+  }
+
+  .safety-title {
+    font-size: 3rem;
+    font-weight: 300; 
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .safety-divider {
+    border-color: #333;
+    margin-bottom: 30px;
+  }
+
+  /* --- THE NEW FLEXBOX LAYOUT --- */
+  .safety-content-row {
+    display: flex; /* Puts the shield and text side-by-side cleanly */
+    align-items: flex-start; /* Centers the shield vertically next to the text */
+    justify-content: space-between;
+    gap: 2rem; /* Keeps them from touching */
+    padding: 20px 0; 
+    width: 100%;
+  }
+
+  /* --- THE SHIELD SIDE --- */
+  .safety-graphic-side {
+    flex: 0 0 45%; /* Strictly reserves 40% of the row for the shield */
+    display: flex;
+    justify-content: center;
+  }
+
+  .shield-image {
+    width: 100%; /* Tells the image to fill the entire 40% flex column */
+    height: auto; /* Keeps the proportions perfect */
+    mix-blend-mode: screen; 
+    opacity: 0.8; /* Bumped up slightly from 0.6 so the details shine */
+  }
+
+  /* --- THE TEXT SIDE --- */
+  .safety-text-side {
+    flex: 0 0 50%; /* Strictly reserves 55% of the row for the text */
+  }
+
+  .safety-text-side p {
+    font-size: 0.85rem; /* Sleek, technical font size */
+    line-height: 1.3;
+	margin-top: -2px; 
+    margin-bottom: 1rem; 
+  }
+
+  .tier-title {
+    font-size: 1.15rem; 
+    color: #ffffff;
+    margin-top: 0px; 
+    margin-bottom: 8px; 
+  }
+
+  /* --- THE "ESSE QUAM VIDERI" VIDEO MASK --- */
+  .video-text-wrapper {
+    position: relative;
+    margin-top: -30px;
+    height: 120px;
+    overflow: hidden;
+    width: 55%;
+    margin-left: auto;
+    
+    /* THE DOUBLE-BLEND TRICK */
+    background-color: #000000; /* Creates a solid base for the math */
+    mix-blend-mode: screen; /* This tells the browser: "Make anything black completely invisible!" */
+  }
+
+ .text-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1; 
+  }
+
+  .knockout-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    
+    background-color: #000000; /* Changed from #03030a to pure black */
+    color: #ffffff; 
+    mix-blend-mode: multiply; 
+    
+    z-index: 2; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video-masked-text {
+    font-size: 3.5rem; /* Shrunk down from 6rem */
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* --- NEUROTRONIC BRAIN STYLES --- */
+  .brain-section {
+    background-color: #000000; /* Pure black to make the glowing video pop */
+    padding: 100px 40px;
+    border-top: 1px solid #1a1a3a; /* A subtle dark line to separate the sections */
+  }
+
+  .brain-container {
+    max-width: 1600px; /* Widened the overall container slightly to give the big video room */
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    gap: 80px; /* Wider gap for a more epic feel */
+  }
+
+  .brain-video-side {
+    width: 60%; 
+    overflow: hidden; 
+    border-radius: 60px 0px 60px 0px; 
+    box-shadow: 0px 0px 50px rgba(0, 150, 255, 0.2); 
+    aspect-ratio: 16 / 9; /* Creates the cinematic box */
+  }
+
+  /* Here is the missing rule! This forces the video to fill the box */
+ .brain-video {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center; 
+    display: block;
+    
+    /* THE ZOOM CROP */
+    transform: scale(1.25); /* Zooms the video in by 25%, pushing the edges out of view! */
+  }
+
+  .brain-text-side {
+    width: 40%; /* Shrinks the text side down to fit the new massive video */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* The Stencil Trick for the Brain Title */
+  .brain-knockout-wrapper {
+    position: relative;
+    width: 100%;
+    height: 320px; /* Gives the big text plenty of room */
+    overflow: hidden;
+    background-color: #000000;
+    mix-blend-mode: screen; 
+    margin-bottom: 20px;
+  }
+
+  .brain-text-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+  }
+
+  .brain-knockout-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #000000;
+    color: #ffffff;
+    mix-blend-mode: multiply;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns the text to the left */
+  }
+
+  .brain-title {
+    font-size: 5.5rem;
+    line-height: 1.1;
+    font-weight: normal;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif; /* Matches the elegant Serif font from your screenshot! */
+  }
+
+  .brain-subtitle {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #ffffff;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  /* The Gradient Button */
+  .gradient-button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    background: linear-gradient(90deg, #1c1544, #9c7b41); /* That beautiful deep blue-to-gold sweep */
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gradient-button:hover {
+    transform: translateY(-3px); /* Makes the button float up slightly when clicked/hovered */
+    box-shadow: 0px 6px 20px rgba(156, 123, 65, 0.4); /* Adds a golden glow on hover */
+  }
+
+  /* --- PUBLICATIONS & DEMOS STYLES --- */
+  .pub-demo-section {
+    background-color: #000000;
+    
+    /* THE FIX: Pulls the title much closer to the top edge */
+    padding-top: 40px; 
+    
+    /* THE DIVIDER: A 1-pixel soft gray-blue line spanning the page */
+    border-top: 1px solid #4a5c73; 
+  }
+
+  .pub-demo-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px 80px 40px; /* Gives breathing room before the video bar */
+  }
+
+  .pub-demo-title {
+    font-size: 4.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+
+  /* The Grid Magic */
+  .pub-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates exactly 3 equal columns */
+    gap: 60px 40px; /* 60px vertical gap, 40px horizontal gap */
+  }
+
+  .pub-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the button under the image */
+  }
+
+  .pub-image {
+    width: 100%;
+    aspect-ratio: 16 / 10; /* Keeps all images uniform even if their original sizes differ! */
+    object-fit: cover;
+    border: 2px solid #0a1128; /* The dark blue frame from your screenshots */
+    box-shadow: 0px 4px 20px rgba(0, 50, 150, 0.15); /* Subtle blue glow */
+    margin-bottom: 25px;
+  }
+
+  /* --- SURGICAL STRIKE: AEROSPACE PUB BUTTONS --- */
+  .pub-button {
+    background-color: #0b111e;
+    color: #00e5ff !important;
+    border: 1px solid #203554;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: block;      /* Makes the button fill the width of the card */
+    width: 100%; 
+    box-sizing: border-box; /* Ensures padding doesn't push it past 100% */
+  }
+
+  .pub-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37; /* The signature gold hover */
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+    transform: translateY(-4px);
+  }
+
+  /* --- DECORATIVE VIDEO BAR --- */
+  .decorative-video-bar {
+    width: 100%;
+    height: 250px; /* A nice, wide letterbox cinematic bar */
+    overflow: hidden;
+    border-top: 1px solid #1a1a3a;
+    border-bottom: 1px solid #1a1a3a;
+  }
+
+  .circuit-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    opacity: 0.6; /* Dims it slightly so it's a background element, not a distraction */
+  }
+</style>

@@ -1,0 +1,238 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Renshaw Theory - Neurobotics">
+
+<section id="renshaw-theory" class="renshaw-section">
+  <div class="renshaw-container">
+    
+    <div class="renshaw-row">
+      <div class="renshaw-graphic">
+        <img src="/assets/images/portrait-universe-colorful-crop.jpg" alt="Renshaw Theory Universe" class="renshaw-image">
+      </div>
+      <div class="renshaw-text">
+        <h2 class="renshaw-title">Renshaw Theory:<br>A Unified Physical & Metaphysical Framework</h2>
+        <p>Every great framework begins with a question that refuses to go away. For Kenneth Renshaw, that question was this: what if the universe is not merely described by mathematics, but <em>is</em> mathematics — and what if the Logos of John 1:1 is not a theological metaphor but the precise technical term for the initial boundary condition from which the equations run?</p>
+        <p>Renshaw Theory is a cosmological framework integrating M-Theory, Penrose geometry, the Grand Unified Theory ladder, the Plebanski mechanism, and triality into a single coherent account of physical reality — with the Logos as the ground on which the physics stands, not a conclusion derived from it.</p>
+        <p>It is currently at Version 0.3. That version number is not modesty. It is precision. Esse Quam Videri applies to version numbers.</p>
+      
+      <div class="resources-grid compact-grid">
+          <a href="white-papers" class="resource-button btn-small">The White Papers</a>
+          <a href="https://zenodo.org/records/19457045" class="resource-button btn-small">Neurobotics Zenodo Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="renshaw-divider">
+
+    <div class="renshaw-row reverse">
+      <div class="renshaw-graphic">
+        <img src="/assets/images/deep-math-chalkboard-crop.png" alt="Mathematics Chalkboard" class="renshaw-image">
+      </div>
+      <div class="renshaw-text">
+        <h3 class="renshaw-subtitle">The Core Claims — V0.3</h3>
+        <p>Renshaw Theory makes eight claims at V0.3, each carrying an honest status marker:</p>
+        <ul class="renshaw-list">
+          <li><strong>[ESTABLISHED]</strong> The mathematics of M-Theory permits compactification geometries that produce the observed particle spectrum</li>
+          <li><strong>[SPECULATIVE]</strong> The Plebanski mechanism operating at the Planck scale selects the specific compactification our universe inhabits</li>
+          <li><strong>[RENSHAW]</strong> The critical dimension of bosonic string theory — 26 — encodes YHVH gematria: 26 = One + Love. This is not coincidence. It is the Name written into the mathematics before the physics begins.</li>
+          <li><strong>[RENSHAW]</strong> Triality in E8 x E8 heterotic string theory maps to the three-in-one structure of Trinitarian theology</li>
+          <li><strong>[RENSHAW]</strong> The Logos of John 1:1 is most precisely understood as the initial boundary condition of the universe — not a law</li>
+          <li><strong>[OPEN]</strong> Whether the gematric encoding is architectural or observational</li>
+          <li><strong>[OPEN]</strong> The precise relationship between the Logos as boundary condition and the God of Christian theology — coherent, not yet fully formalised</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="renshaw-divider">
+
+    <div class="renshaw-row">
+      <div class="renshaw-graphic">
+        <img src="/assets/images/chalkboard-comples-mathematics-physics-crop.png" alt="Glowing Energy Core" class="renshaw-image">
+      </div>
+      <div class="renshaw-text">
+        <h3 class="renshaw-subtitle">The Claim Status System</h3>
+        <p>Every claim in Renshaw Theory carries one of four honest labels:</p>
+        <ul class="renshaw-list">
+          <li><strong>[ESTABLISHED]</strong> — Proven, peer-reviewed, undisputed.</li>
+          <li><strong>[SPECULATIVE]</strong> — Proposed, plausible, not yet confirmed or contradicted.</li>
+          <li><strong>[RENSHAW]</strong> — Novel claim of this framework. Coherent, falsifiable in principle, clearly marked as new.</li>
+          <li><strong>[OPEN]</strong> — A question the framework raises but does not yet answer. Honest silence.</li>
+        </ul>
+        <p class="italic-emphasis">This is what intellectual honesty looks like at the frontier.</p>
+      </div>
+    </div>
+
+    <hr class="renshaw-divider">
+
+    <div class="renshaw-row reverse">
+      <div class="renshaw-graphic">
+        <img src="/assets/images/man-looking-up-night-sky-stars.jpg" alt="Looking up at the universe" class="renshaw-image">
+      </div>
+      <div class="renshaw-text">
+        <h3 class="renshaw-subtitle">The Convergence: Corpus Concursus</h3>
+        <p>Renshaw Theory will not reach V1.0 within this universe. That is not a limitation — it is an accurate statement about the nature of the questions it asks. The framework advances when the evidence advances. Not before.</p>
+        
+        <div class="resources-grid">
+          <a href="white-papers" class="resource-button">The White Papers</a>
+          <a href="https://zenodo.org/records/19457045" class="resource-button">Neurobotics Zenodo Paper</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* --- RENSHAW SECTION BASE --- */
+  .renshaw-section {
+    background-color: #03030a; 
+    color: #e0e0e0;
+    padding: 80px 40px;
+    font-family: sans-serif;
+  }
+
+  .renshaw-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .renshaw-divider {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 60px 0;
+  }
+
+ /* --- FLEXBOX ROW LAYOUT --- */
+  .renshaw-row {
+    display: flex;
+    align-items: flex-start; /* THE FIX: Changed from 'center' to 'flex-start' */
+    justify-content: space-between;
+    gap: 4rem; 
+  }
+
+  /* The magic class that flips the layout for alternating rows */
+  .renshaw-row.reverse {
+    flex-direction: row-reverse;
+  }
+
+  /* --- COLUMNS --- */
+  .renshaw-graphic {
+    flex: 0 0 45%; /* Image column takes up 45% of the row */
+  }
+
+  .renshaw-text {
+    flex: 0 0 50%; /* Text column takes up 50% */
+  }
+
+  /* --- IMAGES --- */
+  .renshaw-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Optional: adds a tiny, sleek curve to the image corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Gives the images some depth */
+  }
+
+  /* --- TYPOGRAPHY --- */
+  .renshaw-title {
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .renshaw-subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .renshaw-text p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    color: #b0b0c0;
+  }
+
+  .italic-emphasis {
+    font-style: italic;
+    color: #ffffff !important;
+    margin-top: 2rem !important;
+  }
+
+  /* --- LISTS --- */
+  .renshaw-list {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .renshaw-list li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #b0b0c0;
+    margin-bottom: 0.8rem;
+  }
+
+  .renshaw-list strong {
+    color: #ffffff; /* Makes the bracketed tags pop */
+  }
+
+  /* --- 4 BUTTON DYNAMIC RESOURCES GRID --- */
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+    margin-top: 30px; 
+  }
+
+  .resource-button {
+    background-color: #0b111e;
+    color: #00e5ff !important;
+    border: 1px solid #203554;
+    border-radius: 4px;
+    padding: 25px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+  }
+
+  .resource-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37; 
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+    transform: translateY(-4px);
+  }
+
+  @media (max-width: 768px) {
+    .resources-grid {
+      grid-template-columns: 1fr; 
+      gap: 15px;
+    }
+  }
+  /* --- MINI BUTTON OVERRIDES --- */
+  .compact-grid {
+    margin-top: 20px; /* Slightly less space above the grid than the large version */
+    gap: 15px; /* Brings the two buttons closer together */
+  }
+
+  .btn-small {
+    min-height: 50px; /* Shorter than the 70px large buttons */
+    padding: 12px 15px; /* Tighter padding inside the box */
+    font-size: 0.85rem; /* Slightly smaller text */
+  }
+   </style>
+</BaseLayout>

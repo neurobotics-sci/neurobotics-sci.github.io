@@ -1,0 +1,253 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Neurobotics OSS 'Droid' Demo">
+  
+  <section class="demo-intro">
+    <div class="container">
+      <div class="split-row">
+        
+        <div class="media-col">
+          <img src="/assets/images/code-screen-colorful.jpg" alt="Data Stream Concept" class="featured-image">
+        </div>
+
+        <div class="text-col">
+          <h1 class="main-title">Neurobotics OSS<br>'Droid' Demo</h1>
+          
+          <div class="demo-description">
+            <p>What you are seeing below in the demo video* is the Neurobotics OSS 'Droid' Repository cloned from GitHub and setup inside a VSCode IDE workspace. The source code window at the top contains the CMAC Cerebellum Node python code under debug.</p>
+            
+            <p>This is a full simulation, including computing the values of the chemical neurotransmitters including Dopamine and Serotonin. Here is an example of that output embedded in the output of the right terminal pane:</p>
+            
+            <div class="code-block" is:raw>
+              'neuromod': {'DA': 0.5, 'NE': 0.2, '5HT': 0.5, 'ACh': 0.5}
+            </div>
+
+            <p>You can also see what region of the body is getting a simulated 'poke' and how hard that poke is:</p>
+            
+            <div class="code-block" is:raw>
+              {'zone_id': 'arm_R_lower', 'pressure_N': 0.83, 'is_nociceptive': False}
+            </div>
+
+            <p>The middle pane shows the cortical activation at the top level, ready for associative processing and the higher functional areas of the brain.</p>
+
+            <p>The three terminal windows below that are running the following telemetry and neuro-probe tooling scripts, all of which we have released with our OSS drop under AGPL-3.0.</p>
+
+            <p>The terminal windows are running, from right to left:</p>
+
+            <ul class="terminal-list">
+              <li><strong>Right terminal:</strong> Running the telemetry script for the ZMQ implementation of the Spinal Cord tracts.</li>
+              <li><strong>Middle terminal:</strong> A running real-time log of what the Somatosensory Cortex S1 (Brodmann Areas 1, 2, 3) has received.</li>
+              <li><strong>Left terminal:</strong> The equivalent of a neural probe inserted into the Thalamus and simulating the ascending spinocortical pathway relay. When the Return key is hit to start the Thalamic Stimulator Probe, the scrolling in the other terminals is showing the output of the cortical areas involved.</li>
+            </ul>
+
+            <p>There you have it. A complete demonstration of one of the ascending tracts as implemented in the Bubo architecture and freely available to the research and academic communities. Commercial uses require strict licensing, see documentation at GitHub for more details and complete source code:</p>
+
+            <div class="button-wrapper">
+              <a href="https://github.com/neurobotics-sci/neurobotics-biological-substrate" target="_blank" rel="noopener noreferrer" class="resource-button">
+                GitHub Biological Substrate
+              </a>
+            </div>
+
+            <p class="tagline">Neurobotics. The Future. Here. Now.</p>
+            <p class="footnote">*View the demo in the player below.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="container">
+      <h2 class="section-title">The Demo</h2>
+      <hr class="title-divider">
+
+      <div class="split-row video-row">
+        
+        <div class="media-col">
+          <img src="/assets/images/spinothalamic-tract-diagram.jpg" alt="Spinothalamic Tract Diagram" class="diagram-image">
+        </div>
+
+        <div class="video-col">
+          <video controls class="demo-video" poster="/assets/images/demo-video-poster.jpg">
+            <source src="/assets/videos/neurobotics-poke-tickle-demo-video-github.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* --- GLOBAL CONTAINERS --- */
+  .demo-intro {
+    background-color: #03030a;
+    padding: 80px 40px 40px;
+    color: #b0b0c0;
+    font-family: sans-serif;
+  }
+
+  .video-section {
+    background-color: #03030a;
+    padding: 40px 40px 100px;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* --- LAYOUT GRIDS --- */
+  .split-row {
+    display: flex;
+    gap: 60px;
+    align-items: stretch; /* Keeps columns matching in height */
+  }
+
+  .media-col, .text-col, .video-col {
+    flex: 1;
+  }
+
+  /* --- IMAGERY & VIDEO --- */
+  .featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #121f35;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .diagram-image {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff; /* Gives the diagram a clean white background if it has transparency */
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .demo-video {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #00e5ff; /* Cyan border to make it pop */
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+    background-color: #000;
+  }
+
+  /* --- TYPOGRAPHY & TEXT CONTENT --- */
+  .main-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    line-height: 1.1;
+  }
+
+  .section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    text-align: left;
+  }
+
+  .title-divider {
+    width: 100px;
+    border: none;
+    border-top: 2px solid #333;
+    margin: 0 0 40px 0;
+  }
+
+  .demo-description p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  /* Makes the raw data look like terminal output */
+  .code-block {
+    background-color: #050511;
+    border-left: 3px solid #00e5ff;
+    padding: 15px 20px;
+    font-family: monospace;
+    font-size: 1rem;
+    color: #00e5ff;
+    margin-bottom: 20px;
+    overflow-x: auto;
+  }
+
+  .terminal-list {
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+
+  .terminal-list li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+
+  .terminal-list strong {
+    color: #ffffff;
+  }
+
+  .tagline {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 40px;
+  }
+
+  .footnote {
+    font-style: italic;
+    font-size: 0.95rem !important;
+  }
+
+  /* --- BUTTON STYLING --- */
+  .button-wrapper {
+    margin: 30px 0;
+  }
+
+  .resource-button {
+    background-color: #0b111e;
+    color: #00e5ff !important;
+    border: 1px solid #203554;
+    border-radius: 4px;
+    padding: 18px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline-block;
+  }
+
+  .resource-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+    transform: translateY(-3px);
+  }
+
+  /* --- RESPONSIVE MOBILE STACK --- */
+  @media (max-width: 1024px) {
+    .split-row {
+      flex-direction: column;
+    }
+
+    .main-title, .section-title {
+      font-size: 2.8rem;
+    }
+
+    .featured-image {
+      max-height: 400px;
+    }
+  }
+</style>

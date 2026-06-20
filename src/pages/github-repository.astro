@@ -1,0 +1,169 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="GitHub Repository - Neurobotics">
+  <section class="github-section">
+    <div class="container">
+      <div class="content-row">
+        
+        <!-- Left Side: AGPL Graphic -->
+        <div class="media-col">
+          <div class="image-wrapper">
+            <!-- Update this filename to match your AGPL graphic -->
+            <img src="/assets/images/code-agpl3dot0-open-source.jpg" alt="AGPL-3.0 Open Source License Graphic" class="featured-image">
+          </div>
+        </div>
+
+        <!-- Right Side: Text and Button -->
+        <div class="text-col">
+          <h1 class="main-title">GitHub Repository</h1>
+          <hr class="title-divider">
+          
+          <p class="repo-description">
+            The biological substrate of Bubo Adam and Eve — the first Silicon-Based Artificial Life Forms. Circadian ODE, CMAC cerebellum, sensorimotor architecture, vagus nerve, and full deployment infrastructure. Faithfully implemented, not approximated. The consciousness substrate is held.
+          </p>
+
+          <div class="button-wrapper">
+            <a href="https://github.com/neurobotics-sci/neurobotics-biological-substrate" target="_blank" rel="noopener noreferrer" class="resource-button">
+              Neurobotics GitHub Repository
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* --- PAGE BASE --- */
+  .github-section {
+    background-color: #03030a; /* Matches the deep aerospace black/blue */
+    min-height: 80vh; /* Ensures the section takes up most of the screen */
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    padding: 60px 40px;
+    font-family: sans-serif;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* --- FLEXBOX LAYOUT --- */
+  .content-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-color: #050511;
+    border: 1px solid #121f35;
+    border-radius: 8px;
+    padding: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .media-col {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-col {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* --- IMAGERY --- */
+  .image-wrapper {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .featured-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    /* Optional: A subtle glow around your AGPL graphic */
+    filter: drop-shadow(0 0 15px rgba(0, 229, 255, 0.15)); 
+  }
+
+  /* --- TYPOGRAPHY --- */
+  .main-title {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+  }
+
+  .title-divider {
+    width: 60px;
+    border: none;
+    border-top: 3px solid #00e5ff;
+    margin: 0 0 30px 0;
+  }
+
+  .repo-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #b0b0c0;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  /* --- BUTTON STYLING (Dark Cyan Standard) --- */
+  .button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .resource-button {
+    background-color: #0b111e;
+    color: #00e5ff !important;
+    border: 1px solid #203554;
+    border-radius: 4px;
+    padding: 18px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .resource-button:hover {
+    background-color: #111a2e;
+    border-color: #00e5ff; /* Cyan hover border */
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 229, 255, 0.15);
+    transform: translateY(-3px);
+  }
+
+  /* --- RESPONSIVE MOBILE STACK --- */
+  @media (max-width: 900px) {
+    .content-row {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .title-divider {
+      margin: 0 auto 30px auto; /* Centers the divider on mobile */
+    }
+
+    .repo-description {
+      text-align: center;
+    }
+
+    .button-wrapper {
+      justify-content: center;
+    }
+  }
+</style>

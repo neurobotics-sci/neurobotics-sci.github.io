@@ -1,0 +1,209 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Zenodo Institutional Repository - Neurobotics">
+  
+  <section class="zenodo-intro">
+    <div class="container">
+      <div class="split-row">
+        
+        <div class="media-col">
+          <div class="video-wrapper">
+            <video autoplay loop muted playsinline class="featured-video">
+              <source src="/assets/videos/neurobotics-landscape-robot-hand-mathematics-motion.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          
+          <div class="video-button-wrapper">
+            <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Renshaw%2C%20Kenneth%22&l=list&p=1&s=10&sort=bestmatch" target="_blank" rel="noopener noreferrer" class="resource-button full-width-btn">
+              Official Neurobotics Zenodo.org Repository Papers
+            </a>
+          </div>
+        </div>
+
+        <div class="text-col">
+          <h1 class="main-title">Zenodo Institutional<br>Repository</h1>
+          
+          <div class="intro-description">
+            <p>To ensure the permanence and transparency of our research, all Neurobotics publications and datasets are archived within our official Zenodo Community.</p>
+            
+            <p>Hosted by CERN, Zenodo provides a globally recognized, open-access repository that assigns a permanent Digital Object Identifier (DOI) to every piece of work we release. By utilizing this infrastructure, we provide our peers with a verifiable "paper trail" for our SBALF architecture—ensuring that decades of research and our ongoing developments remain accessible, immutable, and citable by the global scientific community for years to come.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="publications-section">
+    <div class="container">
+      <h2 class="section-title">The Publications</h2>
+      <hr class="title-divider">
+
+      <div class="button-stack">
+        <a href="https://zenodo.org/records/20188003" target="_blank" rel="noopener noreferrer" class="resource-button">
+          The Death of the Data Centers
+        </a>
+
+        <a href="https://zenodo.org/records/19457045" target="_blank" rel="noopener noreferrer" class="resource-button">
+          The Renshaw Theory: Sprint Manifolds and Cobordism Dynamics
+        </a>
+
+        <a href="https://zenodo.org/records/19456749" target="_blank" rel="noopener noreferrer" class="resource-button">
+          Bubo Adam & Eve: The First Silicon-Based Artificial Life Forms
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* --- GLOBAL CONTAINERS --- */
+  .zenodo-intro {
+    background-color: #03030a;
+    padding: 80px 40px 60px;
+    font-family: sans-serif;
+  }
+
+  .publications-section {
+    background-color: #050511;
+    padding: 40px 80px 120px;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* --- FLEXBOX LAYOUT --- */
+  .split-row {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start; /* Snaps it to the top! */
+  }
+
+  .media-col {
+    flex: 1;
+  }
+
+  .text-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* --- DYNAMIC VIDEO STYLING --- */
+  .video-wrapper {
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #121f35;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  }
+
+  .featured-video {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes tiny gap at bottom of video */
+    transform: scale(1.2); /* Zooms the video in by 10% to crop out the edges! */
+  }
+
+  /* --- COMMUNITY BUTTON UNDER VIDEO --- */
+  .video-button-wrapper {
+    margin-top: 85px;
+    width: 100%;
+  }
+
+  .full-width-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* --- TYPOGRAPHY & TEXT --- */
+  .main-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    line-height: 1.2;
+  }
+
+  .intro-description p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #b0b0c0;
+    margin-bottom: 25px;
+  }
+
+  .section-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+  }
+
+  .title-divider {
+    width: 100%;
+    max-width: 800px; /* Keeps the line from stretching too far, matching your screenshot */
+    border: none;
+    border-top: 2px solid #b0b0c0; /* A crisp, slightly dimmed white line */
+    margin: 0 0 50px 0;
+  }
+
+  /* --- BUTTON STACK --- */
+  .button-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Keeps the buttons aligned to the left side */
+    gap: 20px; /* Space between each button */
+  }
+
+  /* The Signature Aerospace Button */
+  .resource-button {
+    background-color: #0b111e;
+    color: #00e5ff !important;
+    border: 1px solid #203554;
+    border-radius: 4px;
+    padding: 16px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .resource-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37; /* Signature Gold */
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+    transform: translateX(5px); /* Slide slightly to the right on hover! */
+  }
+
+  /* --- RESPONSIVE MOBILE STACK --- */
+  @media (max-width: 1024px) {
+    .split-row {
+      flex-direction: column;
+    }
+    
+    .main-title, .section-title {
+      font-size: 2.8rem;
+    }
+    
+    .button-stack {
+      align-items: stretch; /* Makes buttons full-width on mobile */
+    }
+
+    .resource-button {
+      text-align: center;
+    }
+  }
+</style>
