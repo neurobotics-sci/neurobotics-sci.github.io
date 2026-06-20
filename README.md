@@ -21,7 +21,7 @@ This site is statically generated utilizing the **Astro** web framework. By ship
 
 Neurobotics is pioneering the departure from probabilistic, "black-box" Large Language Models (LLMs). We are engineering mathematically verifiable, deterministic cognitive architectures running bare-metal on RISC-V hardware. 
 
-Drawing heavily upon **James Albus’s Real-time Control System (RCS)**, our 7-Tier Vector Symbolic Architecture (VSCC) applies Hyperdimensional Computing to execute everything from hard real-time spinal reflexes to top-tier executive cognitive synthesis. 
+Drawing upon **James Albus’s Real-time Control System (RCS)**, our 7-Tier Vector Symbolic Architecture (VSCC) applies Hyperdimensional Computing to execute everything from hard real-time spinal reflexes to top-tier executive cognitive synthesis. 
 
 This is the end of the AI software hallucination. This is the future of safety-critical autonomy.
 
