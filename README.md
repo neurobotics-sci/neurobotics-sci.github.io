@@ -25,15 +25,10 @@ Drawing heavily upon **James Albus’s Real-time Control System (RCS)**, our 7-T
 
 This is the end of the AI software hallucination. This is the future of safety-critical autonomy.
 
----
+🤝 The Team
 
-## 💻 Local Development Protocol
+    Shannon Renshaw: Frontend Architecture, UI/UX Design, & Digital Telemetry
 
-If you are pulling this codebase down for local development or asset updates, ensure you have **Node.js (v24 or higher)** installed. 
+    Kenneth Renshaw: Systems Engineer & SBALF Substrate Architect
 
-### 1. Initialize the Environment
-Clone the repository and install the dependencies:
-```bash
-git clone [https://github.com/neurobotics-sci/neurobotics-sci.github.io.git](https://github.com/neurobotics-sci/neurobotics-sci.github.io.git)
-cd neurobotics-sci.github.io
-npm install
+Copyright © 2026 Neurobotics. All Rights Reserved.
