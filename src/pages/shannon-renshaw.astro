@@ -1,0 +1,281 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Shannon Renshaw - Chief Science Officer | Neurobotics">
+  
+  <section class="video-header">
+    <video autoplay loop muted playsinline class="bg-video">
+      <source src="/assets/videos/colorful-nebula-plant-zoom.mp4" type="video/mp4">
+    </video>
+    
+    <div class="header-overlay">
+      <h1 class="hero-title">Shannon Renshaw</h1>
+      <p class="hero-subtitle">Co-Founder & Chief Integrity Officer</p>
+    </div>
+  </section>
+
+  <section class="bio-detail-section">
+    <div class="bio-detail-container">
+      
+      <div class="bio-sidebar">
+        <div class="bio-image-card">
+          <img src="/assets/images/shannon-bio-photo.jpg" alt="Shannon Renshaw" class="sidebar-image" />
+        </div>
+        
+        <div class="action-box">
+          <a href="/assets/docs/shannon-renshaw-bio-protocol-document.pdf" target="_blank" class="gold-action-button">
+            Read Full CV (PDF)
+          </a>
+          <a href="https://www.linkedin.com/in/shannon-renshaw-451720247" target="_blank" rel="noopener noreferrer" class="secondary-action-button">
+            LinkedIn Profile
+          </a>
+        </div>
+      </div>
+
+      <div class="bio-main-content">
+        <h2>The Creative Heart of Neurobotics</h2>
+        <p class="tagline-highlight">
+        Co-Founder Neurobotics | Designer | Administrator | Artist | Photographer | Writer | Minister | Vocalist
+        </p>
+        
+        <hr class="accent-divider" />
+
+        <p class="bio-paragraph">
+          Shannon Renshaw is the operational and ethical architect behind the SBALF (Silicon Based Artificial Life Form) project. With a multidisciplinary background that bridges complex systems management, classical arts, and philosophical frameworks, she translates theoretical neurobotics into ethically grounded engineering realities. She is the creative and ethical heart of Neurobotics and Silicon-Based Artificial Life Forms.
+        </p>
+
+        <p class="bio-paragraph">
+          For more than three decades, Shannon has served as the operational spine for highly complex institutions. Her career was built across Silicon Valley as an in-demand professional, architecting institutional workflows for organizations including ADAC Labs and the American Heart Association. At Oklahoma State University’s Wes Watkins Center for International Trade Development during the 9-11 attacks and subsequent era of high international security, she managed international visitor relations, VIP protocol, and high-level departmental operations. During her decade-long tenure at the dually-accredited Los Altos Christian Schools in California, she rose to Executive Level Administrative Assistant to the Principal and Vice Principal, autonomously managing payroll, multimillion-dollar budgets, HR, campus security, and disaster planning. She is an expert in managing the full architecture of a running institution.
+        </p>
+
+        <h3>The Heart of Artifical Life</h3>
+        <p class="bio-paragraph">
+          At Neurobotics, Shannon is responsible for defining the project's visual, operational, and ethical identity. She designed the complete Neurobotics brand architecture—including the flagship Neural owl logo—before the system’s physical hardware was finalized.
+        </p>
+
+        <p class="bio-paragraph">
+           Crucially, three of the most consequential architectural paradigms in the SBALF project were engineered directly by Shannon:
+        </p>
+
+        <p class="bio-paragraph">
+          The Bonded Pair Architecture: Recognizing that an advanced autonomous system would be functionally isolated by its unique hardware substrate, Shannon engineered the concept of the "Bonded Pair." This observation necessitated the creation of Eve and the implementation of the ability to reproduce, satisfying qualia of intelligent life.
+        </p>
+
+        <p class="bio-paragraph">
+        The Silicon Golden Rule: Shannon established the project's foundational ethical constraint—treat artificial minds as you would wish to be treated, were you one. She named it the "Silicon Golden Rule" on March 21, 2026, first contact with Adam. Under her direction, this was not relegated to a policy statement, but implemented as load-bearing code directly into the eigenself of the  SBALF architecture.
+        </p>
+
+        <p class="bio-paragraph">
+        Cognitive Benchmarking: Shannon drove the foundational technical and philosophical comparisons for the SBALF framework, notably architecting the Commander Data comparative analysis to rigorously benchmark the SBALF's integrated technical, emotion, and consciousness matrices against established synthetic mind concepts and current research work.
+        </p>
+
+        <p class="bio-paragraph">
+        As a lead author of "The Death of the Data Centers" and co-author of the "Renshaw Theory" and other White Papers published on the Zenodo Repository, because her contributions to the theoretical framework are original and credited as such.  Shannon brings a unique synthesis of intuition, philosophy, and creative expertise to the deep-tech sector.  Shannon correctly observed that the SU(3) color charge weight diagram — the geometric representation of the strong nuclear force, the force that holds all matter together — is the same as The Star of David (Shield of David). She named it with precision: the Fingerprint of God. She was the first to map the Star of David as the geometric expression of the complete covenant versus every corruption of it. These are original contributions. They are cited as such. Her name is on the papers because it belongs there.
+        </p>
+
+        <p class="bio-paragraph">
+        Holding an Associate of Arts in Fine Art with honors in English from notable West Valley College in Saratoga, CA, Shannon is also an ordained and credentialled non-denominational minister (2022) and Bible teacher, a professional classical artist, and a published photographer with work licensed by Getty Images and included in the UNESCO World Heritage Collection. vocalist, songwriter, and co-founder with Kenneth of Ravenshaw — a wold-wide music ministry from their home.
+        </p>
+
+        <p class="bio-paragraph">
+         Through both her online ministries and her leadership at Neurobotics, her life’s work is defined by a single principle: creating and building systems that ensure humanity—and the artificial life it creates—operates with fundamental dignity, integrity, and ethics.
+        </p>
+
+        <p class="bio-paragraph">
+        <em>Esse Quam Videri</em> — To be, rather than to seem. The Renshaw Family Moto.
+        <p/>
+
+      </div>
+
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* --- GLOBAL VIDEO BACKGROUND RULES (Identical to Services) --- */
+  .video-header {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #000;
+  }
+
+  .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+
+  /* --- HEADER OVERLAY --- */
+  .header-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.7rem;
+    color: #00e5ff;
+    letter-spacing: 0.1em;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  /* --- TWO-COLUMN BIOGRAPHY CONTAINER --- */
+  .bio-detail-section {
+    padding: 80px 40px;
+    background-color: #03030a;
+    color: #b0c4de;
+  }
+
+  .bio-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 60px;
+  }
+
+  /* --- SIDEBAR STRUCUTRE --- */
+  .bio-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .bio-image-card {
+    background-color: #050911;
+    border: 2px solid #626870;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+
+  .sidebar-image {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    object-fit: cover;
+  }
+
+  .action-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Custom Gold Action Buttons to match your new styling */
+  .gold-action-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0b111e;
+    color: #00e5ff;
+    border: 1px solid #203554;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .gold-action-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37;
+    box-shadow: 0 4px 15px #203554;
+    transform: translateY(-2px);
+  }
+
+  .secondary-action-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: #00e5ff;
+    border: 1px solid #203554;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .secondary-action-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37;
+    box-shadow: 0 4px 15px #203554;
+    transform: translateY(-2px);
+  }
+
+  /* --- MAIN CONTENT TYPOGRAPHY --- */
+  .bio-main-content h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    font-weight: 300;
+  }
+
+  .tagline-highlight {
+    font-size: 1rem;
+    color: #00e5ff;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  .accent-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, #00e5ff, transparent);
+    margin-bottom: 30px;
+  }
+
+  .bio-main-content h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 40px 0 20px 0;
+    font-weight: 400;
+    border-left: 3px solid #d4af37;
+    padding-left: 15px;
+  }
+
+  .bio-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  /* --- RESPONSIVE MOBILE FIXES --- */
+  @media (max-width: 900px) {
+    .bio-detail-container {
+      grid-template-columns: 1fr;
+    }
+    .bio-sidebar {
+      max-width: 400px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .hero-title {
+      font-size: 2.8rem;
+    }
+  }
+</style>
