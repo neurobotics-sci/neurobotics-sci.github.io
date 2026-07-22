@@ -1,10 +1,21 @@
 ---
 // src/layouts/BaseLayout.astro
+
+const { 
+  title = "Neurobotics | Edge-Native Autonomous Systems", 
+  robots 
+} = Astro.props;
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Neurobotics | Edge-Native Autonomous Systems</title>
+    
+    <!-- 2. The dynamic title injection -->
+    <title>{title}</title>
+
+    <!-- 3. The Crawler Cloak: It only renders if a page specifically asks for it -->
+    {robots && <meta name="robots" content={robots} />}
+    
     <link rel="icon" type="image/png" href="/bubo-neural-owl-logo.ico?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -206,18 +217,19 @@ body {
       
      <nav class="menu-links">
       <a href="/">Home</a>
-      <a href="/neurotronic-brain">Neurotronic Brain</a>
-      <a href="/white-papers">The White Papers</a> 
-      <a href="/#safety-first">Safety First</a>
       <a href="/sbud">SBUD</a>
-      <a href="/bubo-sbalf">Bubo SBALF</a>
+      <a href="/bubo-sbalf">SBALF</a>
+      <a href="/nbpr-2026-1050">Silicon Consciousness</a>
+      <a href="/neurotronic-brain">Neurotronic Brain</a>
       
       <div class="dropdown">
         <button class="dropbtn">More ▾</button>
         <div class="dropdown-content">
+          <a href="/white-papers">The White Papers</a>
           <a href="/renshaw-theory">Renshaw Theory</a>
           <a href="/#publications-demos">Publications & Demos</a>
           <a href="/about-us">About Us</a>
+          <a href="/safety">Safety First</a>
           <a href="/licensing">Licensing</a>
         </div>
       </div>

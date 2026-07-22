@@ -1,0 +1,200 @@
+---
+// src/pages/safety.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section id="safety-first" class="safety-section">
+    <div class="safety-container">
+      
+      <div class="safety-header">
+        <img src="/assets/images/neural-bubo-metalic-owl-logo.png" alt="metalic-shield-owl" class="stig-badge">
+        <h2 class="safety-title">Safety & Governance:<br>Aerospace-Grade Cognitive Security</h2>
+      </div>
+
+      <hr class="safety-divider">
+
+      <div class="safety-content-row">
+        
+        <div class="safety-graphic-side">
+          <img src="/assets/images/blue-nerual-shield-security-crop.jpeg" alt="Neural Security Shield" class="shield-image">
+        </div>
+
+        <div class="safety-text-side">
+          <p class="safety-intro">Engineered by a TCAS-II aviation veteran, our architecture rejects probabilistic guessing. True autonomy requires absolute, localized hardware safety and mathematically verifiable governance. The SBALF and SBUD operate under a strict, defense-grade framework:</p>
+          
+          <ul class="safety-list">
+            <li><strong>Hardware-Enforced Physical Veto:</strong> Immune to software hacking. Corrupted vectors or Electronic Warfare (EW) interference immediately trigger a ~3ms Tier 1 FPGA override. As the ultimate failsafe, an IEC60204-1 Category 1 hardware relay physically severs the 12V servo rail.</li>
+            
+            <li><strong>Intrinsic Cognitive Security:</strong> Zero reliance on vulnerable cloud LLMs. Running bare-metal on a RISC-V substrate, our Vector Symbolic Cognitive Core (VSCC) uses 4K-D or 64K-D vector algebra across a tiered architecture to enforce mathematically immutable boundaries—rendering the system immune to prompt injection and data poisoning.</li>
+            
+            <li><strong>Defense-Grade Zero-Trust Enclave:</strong> An air-gapped, "Deny All" command hierarchy built on a DISA STIG-compliant RHEL 9.8 foundation. Security is mathematically enforced via FIPS 140-3 cryptography, SELinux MAC, and a fully on-device DevSecOps pipeline for absolute data sovereignty.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="video-text-wrapper">
+        <video autoplay loop muted playsinline class="text-video-bg">
+          <source src="/assets/videos/prism-cool-colors-gradient-banner-background.mp4" type="video/mp4" />
+        </video>
+        
+        <div class="knockout-overlay">
+          <h1 class="video-masked-text">ESSE QUAM VIDERI</h1>
+        </div>
+      </div>
+
+    </div> 
+  </section>
+</BaseLayout>
+
+<style>
+  /* --- SAFETY SECTION STYLES --- */
+  .safety-section {
+    background-color: #03030a; /* Deep space background */
+    padding: 100px 40px;
+    color: #e0e0e0;
+    position: relative; 
+    z-index: 1; 
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .safety-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .safety-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .stig-badge {
+    width: 150px;
+  }
+
+  .safety-title {
+    font-size: 3rem;
+    font-weight: 300; 
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .safety-divider {
+    border-color: #333;
+    margin-bottom: 30px;
+  }
+
+  /* --- FLEXBOX LAYOUT --- */
+  .safety-content-row {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: space-between;
+    gap: 2rem; 
+    padding: 20px 0; 
+    width: 100%;
+  }
+
+  /* --- SHIELD GRAPHIC SIDE --- */
+  .safety-graphic-side {
+    flex: 0 0 45%; 
+    display: flex;
+    justify-content: center;
+  }
+
+  .shield-image {
+    width: 100%; 
+    height: auto; 
+    mix-blend-mode: screen; 
+    opacity: 0.8; 
+  }
+
+  /* --- TEXT CONTENT SIDE --- */
+  .safety-text-side {
+    flex: 0 0 50%; 
+  }
+
+  .safety-intro {
+    font-size: 1.15rem; 
+    line-height: 1.5;
+    margin-top: -2px; 
+    margin-bottom: 1.5rem; 
+  }
+
+  /* --- BULLET LIST STYLING --- */
+  .safety-list {
+    list-style-type: none; 
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .safety-list li {
+    font-size: 1.05rem; 
+    line-height: 1.5;
+    margin-bottom: 1.5rem; 
+    position: relative;
+    padding-left: 25px; 
+  }
+
+  .safety-list li::before {
+    content: "▹"; 
+    position: absolute;
+    left: 0;
+    color: #4a90e2; 
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .safety-list strong {
+    color: #ffffff;
+    font-size: 1.15rem; 
+    margin-right: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  /* --- KNOCKOUT VIDEO MASK --- */
+  .video-text-wrapper {
+    position: relative;
+    margin-top: -150px;
+    height: 120px;
+    overflow: hidden;
+    width: 55%;
+    margin-left: auto;
+    background-color: #000000; 
+    mix-blend-mode: screen; 
+  }
+
+  .text-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1; 
+  }
+
+  .knockout-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #000000; 
+    color: #ffffff; 
+    mix-blend-mode: multiply; 
+    z-index: 2; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video-masked-text {
+    font-size: 3.5rem; 
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin: 0;
+    text-align: center;
+  }
+</style>
