@@ -160,6 +160,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       height: 120px; 
       overflow: hidden;
       background-color: #000000; 
+      isolation: isolate; /* FIX: Forces the blend mode to stay inside this specific container */
     }
 
     .video-text-knockout video {
@@ -170,6 +171,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       width: 100%;
       height: 100%;
       object-fit: cover;
+      z-index: -1; /* FIX: Pushes the video firmly beneath the text layer */
     }
 
     .knockout-heading {
@@ -188,23 +190,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       letter-spacing: 0.1em;
       
       /* THE MAGIC LAYER */
-      background-color: #050a15; 
+      background-color: #000000; /* FIX: Changed from #050a15 to pure black to match the parent card */
       color: #ffffff;
       mix-blend-mode: multiply;
-    }
-
-    /* Mobile Responsiveness for Hero */
-    @media (max-width: 900px) {
-      .two-column {
-        grid-template-columns: 1fr;
-      }
-      .video-text-knockout {
-        height: 100px;
-      }
-      .knockout-heading {
-        font-size: 1.8rem; 
-        justify-content: center; 
-      }
+      z-index: 1; /* FIX: Locks the text mask directly on top of the video */
     }
 
     /* --- 4. BOTTOM ROW: VAULT LIBRARY --- */
