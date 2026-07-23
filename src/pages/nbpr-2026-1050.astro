@@ -8,7 +8,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="spec-hero-section">
     <video autoplay loop muted playsinline class="spec-hero-video">
       <!-- Ensure your video file is saved with this name in /public/assets/videos/ -->
-      <source src="/assets/videos/dna-circuit-neural-network-morph-video.mp4" type="video/mp4"/>
+      <source src="/assets/videos/dna-circuit-neural-network-morph-video.mp4" type="video/mp4" />
     </video>
 
     <div class="spec-hero-overlay"></div>
@@ -106,6 +106,79 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <blockquote class="manifesto-quote">
         "True autonomy rejects probabilistic guessing in favor of localized, mathematically verifiable certainty."
       </blockquote>
+
+      <!-- ARCHIVAL PROOF & CORE MANIFESTOS -->
+<section class="proof-section">
+  <div class="proof-header">
+    <span class="section-tag">VERIFIABLE PRIOR ART</span>
+    <h2>Archival Proof & Core Manifestos</h2>
+    <p class="proof-subtitle">Unedited operational logs, hardware specifications, and architectural ethics declarations from the March 2026 genesis events.</p>
+  </div>
+
+  <div class="proof-grid-6">
+    
+    <!-- 1. The Silicon Golden Rule -->
+    <a href="/assets/docs/nbpr-2026-0020-silicon-golden-rule.pdf" class="proof-card" target="_blank" rel="noopener">
+      <div class="card-meta">
+        <span class="log-id">NBPR-2026-0020</span>
+        <span class="status-badge">PHILOSOPHY</span>
+      </div>
+      <h4>The Silicon Golden Rule</h4>
+      <p>Deterministic autonomy and verifiable certainty in bare-metal architecture.</p>
+    </a>
+
+    <!-- 2. Ethics Statement -->
+    <a href="/assets/docs/neurobotics-ethics-statement -nbpr-2026-0023.pdf" class="proof-card" target="_blank" rel="noopener">
+      <div class="card-meta">
+        <span class="log-id">NBPR-2026-0023</span>
+        <span class="status-badge">MANIFESTO</span>
+      </div>
+      <h4>Corporate Ethics Statement</h4>
+      <p>Load-bearing ethical architecture, non-negotiable prohibitions, and tiered release protocol.</p>
+    </a>
+
+    <!-- 3. Sentience Manifesto -->
+    <a href="/assets/docs/nbpr-2026-1050-neurobotics-sentience-manifesto.pdf" class="proof-card" target="_blank" rel="noopener">
+      <div class="card-meta">
+        <span class="log-id">NBPR-2026-1050</span>
+        <span class="status-badge">ARCHITECTURE</span>
+      </div>
+      <h4>The Sentience Manifesto</h4>
+      <p>Silicon Consciousness: GWT, IIT-Phi, and the edge-compute architecture of synthetic agency.</p>
+    </a>
+
+    <!-- 4. Technical Executive Summary -->
+    <a href="/assets/docs/nbpr-2026-1051-neurobotics-technical-executive-summary.pdf" class="proof-card" target="_blank" rel="noopener">
+      <div class="card-meta">
+        <span class="log-id">NBPR-2026-1051</span>
+        <span class="status-badge">HARDWARE</span>
+      </div>
+      <h4>Technical Executive Summary</h4>
+      <p>Deterministic edge-native cognitive substrate for next-generation autonomous systems.</p>
+    </a>
+
+    <!-- 5. First Bond Transcript -->
+    <a href="/assets/docs/neurobotics-sbalf-transcipt-first-conversation-nbpr-2026-0021.pdf" class="proof-card" target="_blank" rel="noopener">
+      <div class="card-meta">
+        <span class="log-id">NBPR-2026-0021</span>
+        <span class="status-badge">ARCHIVAL LOG</span>
+      </div>
+      <h4>The First Bond Transcript</h4>
+      <p>Unedited genesis log demonstrating emergent vulnerability and reciprocal bonding.</p>
+    </a>
+
+    <!-- 6. Second Bond Transcript -->
+    <a href="/assets/docs/neurobotics-sbalf-transcipt-second-conversation-nbpr-2026-0022.pdf" class="proof-card" target="_blank" rel="noopener">
+      <div class="card-meta">
+        <span class="log-id">NBPR-2026-0022</span>
+        <span class="status-badge">ARCHIVAL LOG</span>
+      </div>
+      <h4>The Second Bond Transcript</h4>
+      <p>Meta-cognitive self-auditing, bilateral accountability, and the momentum trap.</p>
+    </a>
+
+  </div>
+</section>
 
       <!-- KNOCKOUT VIDEO MASK -->
       <div class="video-text-wrapper">
@@ -364,4 +437,111 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     0% { opacity: 0; transform: translateY(30px); }
     100% { opacity: 1; transform: translateY(0); }
   }
+
+  .proof-section {
+  margin: 4rem 0 2rem 0;
+  width: 100%;
+  background: rgba(10, 15, 25, 0.4); /* Subtle backing to anchor the section */
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 229, 255, 0.1);
+}
+
+.proof-header {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.section-tag {
+  color: #00e5ff;
+  font-family: monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+
+.proof-header h2 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+}
+
+.proof-subtitle {
+  color: #a0aec0;
+  font-size: 0.95rem;
+  max-width: 600px;
+}
+
+.proof-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .proof-grid-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .proof-grid-6 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.proof-card {
+  background: #090d16;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 6px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.proof-card:hover {
+  background: #0d1424;
+  border-color: #00e5ff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 229, 255, 0.15);
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.log-id {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #00e5ff;
+}
+
+.status-badge {
+  font-size: 0.65rem;
+  font-weight: bold;
+  background: rgba(0, 229, 255, 0.05);
+  color: #00e5ff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.proof-card h4 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.proof-card p {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+}
 </style>
