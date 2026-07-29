@@ -24,4 +24,4 @@ pnpm-debug.log*
 .idea/
 node_modules/
 dist/
-public/assets/videos/
+#public/assets/videos/
