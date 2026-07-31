@@ -1,0 +1,537 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Modular Neurotronic Brain - Neurobotics">
+  
+  <section class="video-header">
+    <video autoplay loop muted playsinline class="bg-video">
+      <source src="/assets/videos/genesis-robot-human-finger-light.mp4" type="video/mp4">
+    </video>
+    
+    <div class="header-overlay">
+      <h1 class="hero-title">The Modular Neurotronic Brain</h1>
+      <p class="hero-subtitle">Empowering the autonomous industry with a true drop-in brain and nervous system.</p>
+      <p class="hero-tagline">Let's build the droids!</p>
+    </div>
+  </section>
+
+  <!-- NEW DECORATIVE DIVIDER BAR -->
+  <div class="divider-bar"></div>
+
+  <section class="services-section">
+    <video autoplay loop muted playsinline class="bg-video">
+      <source src="/assets/videos/center-image-technology-background.mp4" type="video/mp4">
+    </video>
+
+    <div class="services-overlay">
+      <div class="services-list">
+        
+        <!-- CARD 1: Image Left, Text Right -->
+        <div class="horizontal-card">
+          <div class="card-image-wrapper">
+            <img src="/assets/images/robot-hand-orange-glowing-tech-background.png" alt="The Somatic Controller" class="card-image-hz">
+          </div>
+          <div class="card-text-wrapper">
+            <h3>Board One: The Somatic Controller</h3>
+            <p>A 5-tier architecture in silicon based upon our OSS release. Provides manufacturers with a complete, drop-in lower nervous system. Handles high-speed telemetry, homeostatic state tracking, and hard real-time spinal reflex arcs directly at the edge.</p>
+          </div>
+        </div>
+
+        <!-- CARD 2: Text Left, Image Right (reverse-card) -->
+        <div class="horizontal-card reverse-card">
+          <div class="card-image-wrapper">
+            <img src="/assets/images/brain-matrix-website.png" alt="The SBUD Neocortex" class="card-image-hz">
+          </div>
+          <div class="card-text-wrapper">
+            <h3>Board Two: The SBUD Neocortex</h3>
+            <p>Tiers 6–7 fully deterministic HDC/VSA implementation featuring our proprietary Aristotelian Syllogism Engine. Designed for complex executive overrides, goal decomposition, and secure knowledge representation without relying on probabilistic hallucination.</p>
+          </div>
+        </div>
+
+        <!-- CARD 3: Image Left, Text Right (Locked IP) -->
+        <div class="horizontal-card locked-ip-card">
+          <div class="card-image-wrapper">
+            <img src="/assets/images/sbalf-brain.png" alt="The SBALF Neocortex" class="card-image-hz">
+          </div>
+          <div class="card-text-wrapper">
+            <h3>Board Three: The SBALF Neocortex</h3>
+            <p>The apex of cognitive science. A fully autopoietic architecture capable of true synthetic formulation and self-preservation. <br><br><strong>STRICTLY HELD INTERNAL AND CONFIDENTIAL IP.</strong><br>Restricted to Neurobotics internal development and secured within the data vault.</p>
+          </div>
+        </div>
+
+        <!-- CARD 4: Text Left, Image Right (reverse-card) -->
+        <div class="horizontal-card reverse-card">
+          <div class="card-image-wrapper">
+            <img src="/assets/images/gold-microchips-gold-light-energy.jpg" alt="The Galvanic Barrier" class="card-image-hz">
+          </div>
+          <div class="card-text-wrapper">
+            <h3>Board Four: The Galvanic Barrier</h3>
+            <p>An optional, fully optoisolated hardware shield protecting delicate cognitive core logic from the chaotic world of spiking servos, high-voltage actuators, and industrial feedback loops. Ensures absolute signal integrity across the brain-body barrier.</p>
+          </div>
+        </div>
+
+        <!-- CARD 5: Image Left, Text Right -->
+        <div class="horizontal-card">
+          <div class="card-image-wrapper">
+            <img src="/assets/images/blue-microchips-one-board.png" alt="SBUD-SB2 Single Board Brain" class="card-image-hz">
+          </div>
+          <div class="card-text-wrapper">
+            <h3>Board Five: The SBUD-SB2</h3>
+            <p>The ultimate consolidation. The entire Neurobotics 7-Tier cognitive architecture engineered onto a single 4-inch square board design. Delivers maximum processing density and full deterministic capabilities while sipping power at less than 15W total.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container split-layout">
+      
+      <!-- LEFT COLUMN: Condensed Form -->
+      <div class="form-wrapper">
+        <h2 class="form-title left-align">Request a Product Prospectus</h2>
+        
+        <form action="mailto:info@NeuroboticsSci.ai" method="POST" enctype="text/plain" class="quote-form condensed-form">
+          
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="First Name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="Last Name">
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="Phone">
+          </div>
+          <div class="form-group">
+            <label for="company">Company / Organization</label>
+            <input type="text" id="company" name="Company">
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="position">Position / Title</label>
+            <input type="text" id="position" name="Position">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="inquiringAbout">Inquiring About</label>
+            <select id="inquiringAbout" name="Inquiring About">
+              <option value="">Choose an option</option>
+              <option value="Board One: Somatic Controller">Board One: Somatic Controller</option>
+              <option value="Board Two: SBUD Neocortex">Board Two: SBUD Neocortex</option>
+              <option value="Board Four: Galvanic Barrier">Board Four: Galvanic Barrier</option>
+              <option value="Board Five: SBUD-SB2">Board Five: SBUD-SB2</option>
+              <option value="Full Matrix JIT Licensing">Full Matrix JIT Licensing</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="Message" rows="4"></textarea>
+          </div>
+
+          <div class="submit-group full-width">
+            <button type="submit" class="resource-button">Submit Request</button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- RIGHT COLUMN: Matrix Graphic & Links -->
+      <div class="matrix-wrapper">
+        <img src="/assets/images/products-matrix-graphic.png" alt="The Modular Neurotronic Brain: Product Matrix" class="side-matrix-image">
+        
+        <div class="license-link-container">
+          <p>Full licensing text and open-source documentation is available here:</p>
+          <a href="https://github.com/neurobotics-sci/neurobotics-biological-substrate/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer" class="resource-button secondary-button">
+            View License on GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* --- GLOBAL VIDEO BACKGROUND RULES --- */
+  .video-header, .services-section {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    opacity: 0.5; /* Slightly darker to let cards pop more */
+  }
+
+  /* --- HEADER OVERLAY --- */
+  .video-header {
+    height: 60vh;
+    background-color: #000;
+  }
+
+  .header-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+  }
+
+  .hero-tagline {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #04060a;
+    letter-spacing: 0.1em;
+  }
+
+  /* --- NEW DIVIDER BAR --- */
+  .divider-bar {
+    height: 40px;
+    background-color: #03030a;
+    border-top: 2px solid #00e5ff;
+    border-bottom: 2px solid #00e5ff;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+  }
+
+  /* --- ZIG-ZAG SERVICES LIST --- */
+  .services-section {
+    padding: 100px 40px;
+    background-color: #03030a; 
+  }
+
+  .services-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px; /* Space between rows */
+    max-width: 1100px;
+    width: 100%;
+  }
+
+  /* Horizontal Card Structure */
+  .horizontal-card {
+    display: flex;
+    flex-direction: row; /* Image Left, Text Right */
+    background-color: #050911;
+    border: 2px solid #121f35;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .horizontal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  }
+
+  /* Reverse Card swaps the order */
+  .horizontal-card.reverse-card {
+    flex-direction: row-reverse; /* Text Left, Image Right */
+  }
+
+  .locked-ip-card {
+    border: 1px solid #d4af37;
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.15);
+  }
+
+  .locked-ip-card strong {
+    color: #d4af37;
+    font-size: 1.1rem;
+  }
+
+  .card-image-wrapper {
+    flex: 0 0 50%; /* Takes up exactly half the card */
+    box-sizing: border-box; /* Adds padding INSIDE the 50% limit */
+    overflow: hidden;
+  }
+
+  .card-image-hz {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+  }
+
+  /* Adds a neon separator line between image and text */
+  .horizontal-card .card-image-wrapper {
+    border-right: 2px solid #00e5ff;
+  }
+  .horizontal-card.reverse-card .card-image-wrapper {
+    border-right: none;
+    border-left: 2px solid #00e5ff;
+  }
+  .locked-ip-card .card-image-wrapper {
+    border-right: 2px solid #d4af37;
+  }
+
+  .card-text-wrapper {
+    flex: 0 0 50%; /* Takes up the other half */
+    box-sizing: border-box; /* Adds padding INSIDE the 50% limit */
+    padding: 50px 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* FORCES ALL BLOCKS TO THE LEFT EDGE */
+    text-align: left;  /* KEEPS TEXT LEFT-ALIGNED */
+    background-color: rgba(3, 3, 10, 0.8); /* Slight transparency */
+  }
+
+  .card-text-wrapper h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    font-weight: 300;
+  }
+
+  .card-text-wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #b9c9df;
+    margin: 0;
+  }
+
+  /* --- CONTACT SECTION (SPLIT LAYOUT) --- */
+  .contact-section {
+    background-color: #0b111e;
+    padding: 80px 40px;
+    border-top: 1px solid #123435;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-container {
+    max-width: 1400px;
+    width: 100%;
+  }
+
+  .split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .form-title.left-align {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #ffffff;
+  }
+
+  .quote-form.condensed-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .full-width {
+    grid-column: span 2;
+  }
+
+  .submit-group.full-width {
+    justify-content: flex-start;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  label {
+    color: #a6adb3;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  input, select, textarea {
+    background-color: #03030a;
+    border: 1.5px solid #195066;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    transition: border-color 0.3s ease;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #00e5ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+  }
+
+  .resource-button {
+    background-color: #122730;
+    color: #00E5FF;
+    border: 1px solid #00E5FF;
+    border-radius: 4px;
+    padding: 15px 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .resource-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37; 
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+    transform: translateY(-2px);
+  }
+
+  /* --- SIDE MATRIX GRAPHIC --- */
+  .matrix-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; 
+  }
+
+  .side-matrix-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #195066;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  .license-link-container {
+    margin-top: 40px;
+    padding-top: 30px;
+    text-align: center;
+    border-top: 1px solid #195066; 
+    width: 100%;
+  }
+
+  .license-link-container p {
+    color: #b9c9df;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  a.resource-button {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .secondary-button {
+    background-color: #122730;
+    border-color: #00e5ff;
+    color: #00e5ff;
+  }
+
+  .secondary-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37; 
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+    transform: translateY(-2px);
+  }
+
+  /* --- RESPONSIVE MOBILE ADJUSTMENTS --- */
+  @media (max-width: 1100px) {
+    /* Stack split contact layout */
+    .split-layout {
+      grid-template-columns: 1fr;
+    }
+    .matrix-wrapper {
+      order: -1; 
+      margin-bottom: 40px;
+    }
+    .form-title.left-align {
+      text-align: center;
+    }
+    .submit-group.full-width {
+      justify-content: center;
+    }
+
+    /* Stack alternating rows gracefully */
+    .horizontal-card, 
+    .horizontal-card.reverse-card {
+      flex-direction: column;
+    }
+    
+    .card-image-wrapper,
+    .card-text-wrapper {
+      flex: 1 1 auto;
+      width: 100%;
+    }
+    
+    .horizontal-card .card-image-wrapper,
+    .horizontal-card.reverse-card .card-image-wrapper {
+      border-right: none;
+      border-left: none;
+      border-bottom: 2px solid #00e5ff;
+    }
+
+    .locked-ip-card .card-image-wrapper {
+      border-bottom: 2px solid #d4af37;
+    }
+
+    .card-text-wrapper {
+      padding: 40px 30px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .quote-form.condensed-form {
+      grid-template-columns: 1fr;
+    }
+    .full-width {
+      grid-column: span 1;
+    }
+  }
+</style>
