@@ -1,0 +1,199 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Connectome Studio - Neurobotics">
+  
+  <section class="demo-intro">
+    <div class="container">
+      
+      <!-- TOP SECTION: 60/40 Split -->
+      <div class="split-row">
+
+        <!-- LEFT COLUMN: MEDIA STACK -->
+        <div class="media-col">
+          
+          <!-- NEW: 9:12 Static Screenshot -->
+          <img src="/assets/images/connectome-screenshot-1.png" alt="Connectome Studio Static View" class="portrait-media">
+          
+          <!-- 16:9 Demo Video -->
+          <video controls autoplay loop muted playsinline class="landscape-media">
+            <source src="/assets/videos/neurobotics-connectome-studio-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+
+        <!-- RIGHT COLUMN: KENNETH'S COPY -->
+        <div class="text-col">
+          <h1 class="main-title">The Connectome Studio</h1>
+          
+          <div class="demo-description">
+            <p class="lead-text">They say a picture is worth a thousand words... so what might this dynamic brain visualization communicate?</p>
+            
+            <p>This is the visualizer for our Neurotronic Brain, that we dub the <strong>Connectome Studio</strong>.</p>
+            
+            <p>Basically, what it does is listen on 100-some-odd endpoints across our NeuralBus in real time, and show the literal brain region nodes being fired and the lines are direct representations of the axons connecting distant brain regions. This is its demo mode as we're just getting it buttoned up. The dual sagittal and coronal views showing simultaneous firing from both planes is an immensely helpful tool.</p>
+            
+            <p>Collectively, this is also the source of the incoming hypersurfaces that constitute the flow of our combined GWT/IIT-Phi conscious momentum loop happening across the substrate at 10Hz, roughly the same as a human's Alpha wave rate and signifying perhaps the same thing.</p>
+            
+            <p>It should be becoming clear what we're up to here at Neurobotics... at least more clear.</p>
+            
+            <h3 class="sub-heading">Where are the LLMs?</h3>
+            <p>Oh, if you are looking for the LLM nodes, we run two small ones for language construction (Broca's Area) and first-pass image classification on the 'What' pathway (Ventral Stream) before calling attention to something novel and shooting it up to the Occipital Cortex lobes and from there to the neocortex.</p>
+            
+            <p>They don't have their own nodes, they are simply co-processors of sorts to the Visual, Broca pathway, and PFC/OFC logic.</p>
+            
+            <p>The distributed brain is where the magic happens, just the same as it is for you and me.</p>
+
+            <p class="tagline">The Future. Here. Now.</p>
+            <p class="footnote">Esse Quam Videri - To BE rather than to SEEM<br>~ Kenneth Renshaw, Co-Founder & Architect</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM SECTION: CENTERED FULL-WIDTH GRAPHIC -->
+      <div class="graphic-row">
+        <img src="/assets/images/connectome-studio-diagram.png" alt="Connectome Architecture Diagram" class="full-width-graphic">
+      </div>
+
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* --- GLOBAL CONTAINERS --- */
+  .demo-intro {
+    background-color: #03030a;
+    padding: 80px 40px 100px;
+    color: #b0b0c0;
+    font-family: sans-serif;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* --- TOP GRID --- */
+  .split-row {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  .media-col {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-col {
+    flex: 1;
+  }
+
+  /* --- BOTTOM GRAPHIC --- */
+  .graphic-row {
+    margin-top: 80px; /* Creates the requested massive breathing room below the text/video */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .full-width-graphic {
+    width: 100%;
+    max-width: 1200px; /* Constrains it slightly so it doesn't blow out on massive monitors */
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #00e5ff;
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+  }
+
+  /* --- IMAGERY & VIDEO --- */
+  .portrait-media {
+    width: 100%;
+    aspect-ratio: 9 / 12; /* Locks the framing to exactly what you requested */
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #00e5ff;
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+    background-color: #000;
+    margin-bottom: 40px; /* Pushes the video down so they don't touch */
+  }
+
+  .landscape-media {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #00e5ff;
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+    background-color: #000;
+  }
+
+  /* --- IMAGERY & VIDEO --- */
+  .landscape-media {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #00e5ff;
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+    background-color: #000;
+  }
+
+  /* --- TYPOGRAPHY & TEXT CONTENT --- */
+  .main-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    line-height: 1.1;
+  }
+
+  .sub-heading {
+    font-size: 1.5rem;
+    color: #00e5ff;
+    margin: 30px 0 15px 0;
+    font-weight: 400;
+  }
+
+  .lead-text {
+    font-size: 1.25rem !important;
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  .demo-description p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    color: #00e5ff;
+    margin-top: 40px;
+  }
+
+  .footnote {
+    font-style: italic;
+    font-size: 1rem !important;
+    color: #ffffff;
+    border-top: 1px solid #1d3257;
+    padding-top: 15px;
+  }
+
+  /* --- RESPONSIVE MOBILE STACK --- */
+  @media (max-width: 1024px) {
+    .split-row {
+      flex-direction: column;
+    }
+
+    .main-title {
+      font-size: 2.8rem;
+    }
+  }
+</style>

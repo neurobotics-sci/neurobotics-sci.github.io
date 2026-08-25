@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About Neurobotics - Provenance & Vision">
+  
+  <section class="demo-intro">
+    <div class="container">
+      
+      <!-- ROW 1: THE ORIGIN STORY -->
+      <div class="split-row row-spacing">
+        
+        <div class="media-col">
+          <video controls playsinline class="landscape-video">
+            <source src="/assets/videos/about-neurobotics-demo-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="text-col">
+          <h1 class="main-title">About<br>Neurobotics</h1>
+          
+          <div class="demo-description">
+            <p>Meet founders Kenneth and Shannon Renshaw, and discover the vision driving a new era of deterministic cognitive architecture.</p>
+            
+            <p>We are the pioneers of a new era of biomimetic technology, solving the problems that legacy robotics and stochastic AI companies have struggled with for decades.</p>
+            
+            <p class="tagline">"They built the bodies, we built the brains."</p>
+            <p class="footnote">The Future. Here. Real. Now.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ROW 2: PRIOR ART NOTEBOOK -->
+      <div class="split-row">
+        
+        <div class="media-col">
+          <video controls playsinline class="landscape-video">
+            <source src="/assets/videos/prior-art-flip-book-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="text-col">
+          <h2 class="section-title">50 Years of<br>Provenance</h2>
+          <hr class="title-divider">
+          
+          <div class="demo-description">
+            <p>This project is the culmination of over 50 years of one man's life's work and passion, backed by 85 years of combined experience in the exact fields required to bring this technology to life.</p>
+            
+            <p>Explore the original computation notebooks detailing decades of prior art, neural schematics, and the mathematical foundation of the Aristotelian Syllogism Engine.</p>
+            
+            <p class="tagline">Real Science. Prior Art Proof.</p>
+            <p class="footnote">1975 - 2026</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* --- GLOBAL CONTAINERS --- */
+  .demo-intro {
+    background-color: #03030a;
+    padding: 80px 40px 100px;
+    color: #b0b0c0;
+    font-family: sans-serif;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* --- LAYOUT GRIDS --- */
+  .split-row {
+    display: flex;
+    gap: 60px;
+    align-items: center; /* Ensures text stays vertically centered with the video */
+  }
+
+  .row-spacing {
+    margin-bottom: 120px; /* Gives plenty of breathing room between the two rows */
+  }
+
+  .media-col, .text-col {
+    flex: 1;
+  }
+
+  /* --- IMAGERY & VIDEO --- */
+  .landscape-video {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Locks it to standard widescreen */
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #00e5ff; /* Cyan border to make it pop */
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+    background-color: #000;
+  }
+
+  /* --- TYPOGRAPHY & TEXT CONTENT --- */
+  .main-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    line-height: 1.1;
+  }
+
+  .section-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    line-height: 1.1;
+    text-align: left;
+  }
+
+  .title-divider {
+    width: 100px;
+    border: none;
+    border-top: 2px solid #00e5ff; /* Matched to the video border */
+    margin: 0 0 30px 0;
+  }
+
+  .demo-description p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 40px;
+  }
+
+  .footnote {
+    font-style: italic;
+    color: #00e5ff;
+    font-size: 0.95rem !important;
+  }
+
+  /* --- RESPONSIVE MOBILE STACK --- */
+  @media (max-width: 1024px) {
+    .split-row {
+      flex-direction: column;
+    }
+
+    .main-title, .section-title {
+      font-size: 2.8rem;
+    }
+  }
+</style>

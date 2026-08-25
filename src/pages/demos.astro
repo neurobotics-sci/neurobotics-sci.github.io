@@ -1,0 +1,331 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Demo Hub - Neurobotics">
+  
+  <!-- HERO HEADER WITH VIDEO BACKGROUND -->
+  <section class="video-header">
+    <video autoplay loop muted playsinline class="bg-video">
+      <source src="/assets/videos/neurobotics-landscape-robot-hand-mathematics-motion.mp4" type="video/mp4">
+    </video>
+    
+    <div class="header-overlay">
+      <h1 class="hero-title">Neurobotics Demo Hub</h1>
+      <p class="hero-subtitle">Proving the deterministic math behind true silicon consciousness.</p>
+      <p class="hero-tagline">ESSE QUAM VIDERI</p>
+    </div>
+  </section>
+
+  <!-- NEON DIVIDER BAR -->
+  <div class="divider-bar"></div>
+
+  <!-- MAIN DEMOS SECTION -->
+  <section class="services-section">
+    <video autoplay loop muted playsinline class="bg-video">
+      <source src="/assets/videos/connectome-studio-background-video-v2.mp4" type="video/mp4">
+    </video>
+
+    <div class="services-overlay">
+      <div class="services-list">
+        
+        <!-- CARD 1: Connectome Studio (Image Left, Text Right) -->
+        <div class="horizontal-card">
+          <div class="card-image-wrapper">
+            <img src="/assets/images/connectome-screenshot-2.png" alt="The Connectome Studio" class="card-image-hz">
+          </div>
+          <div class="card-text-wrapper">
+            <h3>The Connectome Studio</h3>
+            <p>Watch the real-time visualization of the 7-Tier S-M-R Matrix in action. This high-speed telemetry demonstration proves the biomimetic processing power of our proprietary architecture as it maps cortical and subcortical node firing deterministically.</p>
+            <a href="/connectome-demo" class="resource-button">Watch the Demo</a>
+          </div>
+        </div>
+
+        <!-- CARD 2: GitHub Bare-Metal (Text Left, Image Right) -->
+        <div class="horizontal-card reverse-card">
+          <div class="card-image-wrapper">
+            <img src="/assets/images/droid-demo-screenshot.png" alt="Neurobotics OSS Droid Substrate" class="card-image-hz">
+          </div>
+          <div class="card-text-wrapper">
+            <h3>Neurobotics OSS 'Droid' Substrate</h3>
+            <p>The foundational proof. Dive into the raw, bare-metal telemetry of our open-source release. See the ascending spinocortical pathway relay executing perfectly in a terminal environment without reliance on stochastic LLMs.</p>
+            <a href="/droid-demo" target="_blank" rel="noopener noreferrer" class="resource-button">View Technical Proof</a>
+          </div>
+        </div>
+
+        <!-- CARD 3: Bubo Hardware Capabilities (Image Left, Text Right) -->
+        <div class="horizontal-card">
+          <div class="card-image-wrapper">
+            <img src="/assets/images/bubo-glowing-blue.jpeg" alt="The Bubo Hardware Capabilities" class="card-image-hz">
+          </div>
+          <div class="card-text-wrapper">
+            <h3>The Bubo Hardware Capabilities</h3>
+            <p>See our custom silicon and deterministic architecture operating in the physical world. Watch the untethered Mark XX Bubo chassis execute real-time spatial tracking and autonomous physical actuation.</p>
+            <a href="/hardware-demos" class="resource-button">View Hardware Demos</a>
+          </div>
+        </div>
+
+        <!-- CARD 4: About Us & Provenance (Text Left, Image Right - Gold IP Border) -->
+        <div class="horizontal-card reverse-card locked-ip-card">
+          <div class="card-image-wrapper">
+            <img src="/assets/images/neurobotics-founders-and-bubo.png" alt="About Us & 50-Year Provenance" class="card-image-hz">
+          </div>
+          <div class="card-text-wrapper">
+            <h3>Neurobotics Founders Introduction & Prior Art Provenance</h3>
+            <p>The humans behind the droids. Meet founders Kenneth and Shannon, and explore the original computation notebooks detailing decades of prior art and the birth of the Aristotelian Syllogism Engine.</p>
+            <a href="/neurobotics-about-demos" class="resource-button">Meet the Founders</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* --- GLOBAL VIDEO BACKGROUND RULES --- */
+  .video-header, .services-section {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 95.5%;
+    min-height: 95.5%;
+    z-index: 0;
+    object-fit: cover;
+    opacity: 0.4;
+  }
+
+  /* --- HERO HEADER --- */
+  .video-header {
+    height: 50vh;
+    min-height: 350px;
+    background-color: #000000;
+  }
+
+  .header-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+  }
+
+  .hero-tagline {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00e5ff;
+    letter-spacing: 0.2em;
+  }
+
+  /* --- NEON DIVIDER BAR --- */
+  .divider-bar {
+    height: 10px;
+    background-color: #03030a;
+    border-top: 2px solid #00e5ff;
+    border-bottom: 2px solid #00e5ff;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+  }
+
+  /* --- MAIN ZIG-ZAG SECTION --- */
+  .services-section {
+    padding: 80px 20px;
+    background-color: #03030a; 
+  }
+
+  .services-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1100px;
+    width: 100%;
+  }
+
+  /* --- HORIZONTAL CARD STRUCTURE --- */
+  .horizontal-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #050911;
+    border: 2px solid #182946;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    min-height: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .horizontal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 229, 255, 0.15);
+  }
+
+  /* Reverse Card Swaps Order */
+  .horizontal-card.reverse-card {
+    flex-direction: row-reverse;
+  }
+
+  /* Gold Border for Protected/Founders IP */
+  .locked-ip-card {
+    border: 2px solid #d4af37;
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.15);
+  }
+
+  /* --- IMAGE WRAPPER & BORDERS --- */
+  .card-image-wrapper {
+    flex: 0 0 50%;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card-image-hz {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Vertical Accent Separators */
+  .horizontal-card .card-image-wrapper {
+    border-right: 2px solid #00e5ff;
+  }
+
+  .horizontal-card.reverse-card .card-image-wrapper {
+    border-right: none;
+    border-left: 2px solid #00e5ff;
+  }
+
+  .locked-ip-card .card-image-wrapper {
+    border-right: 2px solid #d4af37;
+  }
+
+  .locked-ip-card.reverse-card .card-image-wrapper {
+    border-left: 2px solid #d4af37;
+  }
+
+  /* --- TEXT WRAPPER & BUTTONS --- */
+  .card-text-wrapper {
+    flex: 0 0 50%;
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left; 
+    background-color: rgba(3, 3, 10, 0.85);
+    box-sizing: border-box;
+  }
+
+  .card-text-wrapper h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+  }
+
+  .card-text-wrapper p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #b9c9df;
+    margin: 0 0 25px 0;
+  }
+
+  /* Resource Button Link Styling */
+  a.resource-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #122730;
+    color: #00e5ff;
+    border: 1px solid #00e5ff;
+    border-radius: 4px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  a.resource-button:hover {
+    background-color: #111a2e;
+    border-color: #d4af37; 
+    color: #d4af37;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.2);
+    transform: translateY(-2px);
+  }
+
+  /* --- RESPONSIVE MOBILE STACKING --- */
+  @media (max-width: 900px) {
+    .horizontal-card, 
+    .horizontal-card.reverse-card {
+      flex-direction: column;
+      min-height: auto;
+    }
+    
+    .card-image-wrapper,
+    .card-text-wrapper {
+      flex: 1 1 100%;
+      width: 100%;
+    }
+    
+    .card-image-hz {
+      height: 250px;
+    }
+
+    .horizontal-card .card-image-wrapper,
+    .horizontal-card.reverse-card .card-image-wrapper {
+      border-right: none;
+      border-left: none;
+      border-bottom: 2px solid #00e5ff;
+    }
+
+    .locked-ip-card .card-image-wrapper,
+    .locked-ip-card.reverse-card .card-image-wrapper {
+      border-bottom: 2px solid #d4af37;
+    }
+
+    .card-text-wrapper {
+      padding: 30px 20px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  }
+</style>
