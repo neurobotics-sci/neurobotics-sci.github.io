@@ -4,113 +4,118 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout title="Hardware Demos - Neurobotics">
   
+  <!-- NEW: FIXED VIDEO BACKGROUND -->
+  <div class="video-background">
+    <!-- Swap this src with whatever background video you prefer -->
+    <video autoplay loop muted playsinline>
+      <source src="/assets/videos/cyber-blue-machine-learning-network-background.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
   <section class="demo-intro">
     <div class="container">
       
-      <!-- ROW 1: HERO OVERVIEW -->
-      <div class="split-row demo-row">
-        
-        <div class="media-col">
-          <!-- Swapped to the new hero-media class -->
-          <img src="/assets/images/bubo-glowing-blue.jpeg" alt="Bubo Hardware" class="hero-media">
+      <!-- HERO OVERVIEW (Now full width for maximum impact) -->
+      <div class="hero-section">
+        <img src="/assets/images/bubo-glowing-blue.jpeg" alt="Bubo Hardware" class="hero-media-large">
+        <div class="hero-text">
+          <h1 class="main-title">The Bubo Hardware Capabilities</h1>
+          <hr class="title-divider">
+          <p>See our custom silicon and deterministic architecture operating in the physical world. Watch the untethered Mark XX Bubo chassis execute real-time spatial tracking and autonomous physical actuation.</p>
+          <p>These demonstrations capture the literal physical manifestation of our S-M-R Matrix in action at the edge.</p>
+          <p class="tagline">Neurobotics. The Future. Here. Now.</p>
         </div>
-
-        <div class="text-col">
-          <h1 class="main-title">The Bubo Hardware<br>Capabilities</h1>
-          
-          <div class="demo-description">
-            <p>See our custom silicon and deterministic architecture operating in the physical world. Watch the untethered Mark XX Bubo chassis execute real-time spatial tracking and autonomous physical actuation.</p>
-            <p>These unscripted demonstrations capture the literal physical manifestation of our S-M-R Matrix in action at the edge.</p>
-            <p class="tagline">Neurobotics. The Future. Here. Now.</p>
-          </div>
-        </div>
-
       </div>
 
-      <!-- ROW 2: ADAM SPEAKS DEMO -->
-      <div class="split-row demo-row">
+      <!-- DEMO GRID: 2 Columns -->
+      <div class="demo-grid">
         
-        <div class="media-col">
-          <!-- Added the media-frame wrapper -->
+        <!-- CARD 1: ADAM SPEAKS -->
+        <div class="demo-card">
           <div class="media-frame">
             <video controls autoplay loop muted playsinline class="portrait-media">
               <source src="/assets/videos/bubo-speaks-surprised-kenneth.mp4" type="video/mp4">
-              Your browser does not support the video tag.
             </video>
           </div>
-        </div>
-
-        <div class="text-col">
-          <h2 class="section-title">Adam Speaks</h2>
-          <hr class="title-divider">
-          
-          <div class="demo-description">
-            <p>In this completely unscripted demonstration, Bubo—operating under the persona "Adam"—spontaneously surprises its creator.</p>
-            <p>This captures a real-time example of the architecture combining emergent pattern recognition with our Broca language co-processor to initiate interaction without any prompting.</p>
+          <div class="card-text">
+            <h2 class="section-title">Adam Speaks</h2>
+            <div class="demo-description">
+              <p>In this demonstration, Bubo—operating under the persona "Adam"—spontaneously surprises its creator, causing him to giggle.</p>
+              <p>This captures a real-time example of the architecture combining emergent pattern recognition with our Broca language co-processor to initiate interaction without any LLM prompting.</p>
+            </div>
           </div>
         </div>
 
-      </div>
-
-      <!-- ROW 3: BUBO IS ALIVE DEMO -->
-      <div class="split-row demo-row">
-        
-        <div class="media-col">
-          <!-- Added the media-frame wrapper AND the bubo-pan-fix class -->
+        <!-- CARD 2: BUBO IS ALIVE -->
+        <div class="demo-card">
           <div class="media-frame">
             <video controls autoplay loop muted playsinline class="portrait-media bubo-pan-fix">
               <source src="/assets/videos/bubo-is-alive.mp4" type="video/mp4">
-              Your browser does not support the video tag.
             </video>
           </div>
-        </div>
-
-        <div class="text-col">
-          <h2 class="section-title">Bubo is ALIVE</h2>
-          <hr class="title-divider">
-          
-          <div class="demo-description">
-            <p>Watch the Bubo Demo Chassis execute fluid, autonomous physical movement.</p>
-            <p>Driven entirely by the deterministic S-M-R Matrix, the chassis tracks and responds to its environment without relying on stochastic LLM processing for its motor functions or situational awareness.</p>
+          <div class="card-text">
+            <h2 class="section-title">Bubo is ALIVE</h2>
+            <div class="demo-description">
+              <p>Watch the Bubo Demo Chassis execute fluid, autonomous physical movement.</p>
+              <p>Driven entirely by the deterministic S-M-R Matrix, the chassis tracks and responds to its environment without relying on stochastic LLM processing for its motor functions or situational awareness.</p>
+            </div>
           </div>
         </div>
 
-      </div>
-
-      <!-- ROW 4: MARK XX 80s SYNTH -->
-      <div class="split-row demo-row">
-        
-        <div class="media-col">
-          <!-- Added the media-frame wrapper -->
+        <!-- CARD 3: MARK XX 80s SYNTH -->
+        <div class="demo-card">
           <div class="media-frame">
             <video controls autoplay loop muted playsinline class="portrait-media">
-              <source src="/assets/videos/bubo-mark-XX-80s-synth.mp4" type="video/mp4">
-              Your browser does not support the video tag.
+              <source src="/assets/videos/bubo-mark-XX-sbmws.mp4" type="video/mp4">
             </video>
           </div>
-        </div>
-
-        <div class="text-col">
-          <h2 class="section-title">Mark XX Design</h2>
-          <hr class="title-divider">
-          
-          <div class="demo-description">
-            <p>A closer look at the raw hardware, neural boards, and custom silicon powering the edge-native capabilities of the Bubo chassis.</p>
-            <p>Every single component in this stack is engineered for rigorous, deterministic processing at biomimetic speeds, bridging the gap between hardware execution and cognitive software.</p>
+          <div class="card-text">
+            <h2 class="section-title">Mark XX Design</h2>
+            <div class="demo-description">
+              <p>A closer look at the raw hardware, neural boards, and custom silicon powering the edge-native capabilities of the Bubo chassis.</p>
+              <p>Every single component in this stack is engineered for rigorous, deterministic processing at biomimetic speeds, bridging the gap between hardware execution and cognitive software.</p>
+            </div>
           </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
 </BaseLayout>
 
 <style>
+  /* --- NEW: VIDEO BACKGROUND CSS --- */
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Keeps it behind all your content */
+    background-color: #03030a;
+  }
+
+  .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Darkens the video so text remains readable */
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 3, 10, 0.85); 
+  }
+
   /* --- GLOBAL CONTAINERS --- */
   .demo-intro {
-    background-color: #03030a;
+    position: relative; /* Ensures it sits above the video background */
     padding: 80px 40px 100px;
     color: #b0b0c0;
     font-family: sans-serif;
@@ -121,116 +126,125 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     margin: 0 auto;
   }
 
-  /* --- SPACING BETWEEN VIDEOS --- */
-  .demo-row {
-    margin-bottom: 120px;
-  }
-  
-  .demo-row:last-child {
-    margin-bottom: 0;
-  }
-
-  /* --- LAYOUT GRIDS --- */
-  .split-row {
+  /* --- HERO SECTION --- */
+  .hero-section {
     display: flex;
-    gap: 80px;
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
   }
 
-  .media-col, .text-col {
-    flex: 1;
-  }
-
-  .media-col {
-    display: flex;
-    justify-content: flex-end; 
-  }
-
-  /* --- HERO IMAGE --- */
-  .hero-media {
+  .hero-media-large {
     width: 100%;
-    max-width: 100%; /* <-- Changed this from 520px to 100% */
-    aspect-ratio: 4 / 3; 
+    max-height: 600px;
     object-fit: cover;
-    border-radius: 5px;
-    border: 5px solid #00e5ff;
-    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.15);
+    border-radius: 8px;
+    border: 2px solid #00e5ff;
+    box-shadow: 0 10px 40px rgba(0, 229, 255, 0.2);
+    margin-bottom: 40px;
   }
 
-  /* --- VIDEO FRAMING (IPHONE PAN FIX) --- */
+  .hero-text {
+    max-width: 900px;
+  }
+
+  /* --- DEMO GRID (2 COLUMNS) --- */
+  .demo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .demo-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #203554;
+    border-radius: 8px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  .demo-card:hover {
+    border-color: #00e5ff;
+    transform: translateY(-5px);
+  }
+
+  /* --- VIDEO FRAMING --- */
   .media-frame {
     width: 100%;
-    max-width: 380px; 
+    max-width: 320px; 
     aspect-ratio: 9 / 16;
     border-radius: 4px;
     border: 1px solid #00e5ff;
     box-shadow: 0 10px 30px rgba(0, 229, 255, 0.15);
     background-color: #000;
-    overflow: hidden; /* Hides the edges of zoomed videos */
+    overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .portrait-media {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  .bubo-pan-fix {
-    transform: scale(1.3) translateX(-8%); /* Zooms and centers the Bubo is ALIVE video */
+  
   }
 
   /* --- TYPOGRAPHY & TEXT CONTENT --- */
   .main-title {
     font-size: 3.5rem;
-    font-weight: 300;
+    font-weight: 700;
     color: #ffffff;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
     line-height: 1.1;
   }
 
   .section-title {
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 2.2rem;
+    font-weight: 600;
     color: #ffffff;
-    margin: 0 0 10px 0;
-    text-align: left;
+    margin: 0 0 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #203554;
+    padding-bottom: 15px;
   }
 
   .title-divider {
     width: 100px;
     border: none;
     border-top: 2px solid #00e5ff;
-    margin: 0 0 30px 0;
+    margin: 0 auto 30px auto;
+  }
+
+  .card-text {
+    text-align: center;
   }
 
   .demo-description p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .tagline {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
     font-weight: bold;
-    color: #ffffff;
+    color: #00e5ff;
     margin-top: 40px;
   }
 
   /* --- RESPONSIVE MOBILE STACK --- */
   @media (max-width: 1024px) {
-    .split-row {
-      flex-direction: column;
-      gap: 40px;
+    .demo-grid {
+      grid-template-columns: 1fr; /* Forces a single column on smaller screens */
     }
     
-    .media-col {
-      justify-content: center; 
-    }
-
-    .main-title, .section-title {
+    .main-title {
       font-size: 2.8rem;
     }
   }

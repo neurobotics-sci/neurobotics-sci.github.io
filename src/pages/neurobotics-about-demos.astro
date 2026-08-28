@@ -4,6 +4,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout title="About Neurobotics - Provenance & Vision">
   
+  <!-- FIXED: Moved inside the BaseLayout tags -->
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="/assets/videos/glowing-deep-blue-matrix-background.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+  
   <section class="demo-intro">
     <div class="container">
       
@@ -64,9 +72,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <style>
+  /* --- VIDEO BACKGROUND CSS --- */
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+    background-color: #03030a;
+  }
+
+  .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 3, 10, 0.85); 
+  }
+
   /* --- GLOBAL CONTAINERS --- */
   .demo-intro {
-    background-color: #03030a;
+    position: relative; /* Fixed: Consolidated CSS. Removed the solid background color. */
     padding: 80px 40px 100px;
     color: #b0b0c0;
     font-family: sans-serif;
@@ -81,11 +115,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .split-row {
     display: flex;
     gap: 60px;
-    align-items: center; /* Ensures text stays vertically centered with the video */
+    align-items: center; 
   }
 
   .row-spacing {
-    margin-bottom: 120px; /* Gives plenty of breathing room between the two rows */
+    margin-bottom: 120px; 
   }
 
   .media-col, .text-col {
@@ -95,10 +129,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   /* --- IMAGERY & VIDEO --- */
   .landscape-video {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Locks it to standard widescreen */
+    aspect-ratio: 16 / 9; 
     object-fit: cover;
     border-radius: 4px;
-    border: 1px solid #00e5ff; /* Cyan border to make it pop */
+    border: 1px solid #00e5ff; 
     box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
     background-color: #000;
   }
@@ -124,7 +158,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .title-divider {
     width: 100px;
     border: none;
-    border-top: 2px solid #00e5ff; /* Matched to the video border */
+    border-top: 2px solid #00e5ff; 
     margin: 0 0 30px 0;
   }
 
