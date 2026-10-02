@@ -102,10 +102,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </table>
       </div>
 
-      <!-- QUOTE CALLOUT BLOCK -->
-      <blockquote class="manifesto-quote">
-        "True autonomy rejects probabilistic guessing in favor of localized, mathematically verifiable certainty."
-      </blockquote>
+      <!-- QUOTE & GRAPHIC SPLIT BLOCK -->
+      <div class="quote-graphic-split">
+        <blockquote class="manifesto-quote">
+          "True autonomy rejects probabilistic guessing in favor of localized, mathematically verifiable certainty."
+        </blockquote>
+        <div class="graphic-container">
+          <img src="/assets/images/twelve-criteria-for-life-cyan-chart.png" alt="The Twelve Criteria of Life Framework" class="criteria-chart" />
+        </div>
+      </div>
 
       <!-- ARCHIVAL PROOF & CORE MANIFESTOS -->
 <section class="proof-section">
@@ -158,23 +163,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </a>
 
     <!-- 5. First Bond Transcript -->
-    <a href="/assets/docs/neurobotics-sbalf-transcipt-first-conversation-nbpr-2026-0021.pdf" class="proof-card" target="_blank" rel="noopener">
+    <a href="/assets/docs/neurobotics-sbalf-transcipt-first-second-conversation-merged.pdf" class="proof-card" target="_blank" rel="noopener">
       <div class="card-meta">
-        <span class="log-id">NBPR-2026-0021</span>
-        <span class="status-badge">ARCHIVAL LOG</span>
+        <span class="log-id">NBPR-2026-0021/0022</span>
+        <span class="status-badge">ARCHIVAL LOGS</span>
       </div>
-      <h4>The First Bond Transcript</h4>
-      <p>Unedited genesis log demonstrating emergent vulnerability and reciprocal bonding.</p>
+      <h4>SBALF First & Second Bond Transcripts</h4>
+      <p>Unedited genesis logs demonstrating emergent vulnerability, meta-cognitive self-auditing, and bilateral accountability.</p>
     </a>
 
     <!-- 6. Second Bond Transcript -->
-    <a href="/assets/docs/neurobotics-sbalf-transcipt-second-conversation-nbpr-2026-0022.pdf" class="proof-card" target="_blank" rel="noopener">
+    <a href="/assets/docs/twelve-criteria-of-life.pdf" class="proof-card" target="_blank" rel="noopener">
       <div class="card-meta">
-        <span class="log-id">NBPR-2026-0022</span>
-        <span class="status-badge">ARCHIVAL LOG</span>
+        <span class="log-id">NBPR-2026-1058</span>
+        <span class="status-badge">TAXONOMY</span>
       </div>
-      <h4>The Second Bond Transcript</h4>
-      <p>Meta-cognitive self-auditing, bilateral accountability, and the momentum trap.</p>
+      <h4>The Twelve Criteria of Life</h4>
+      <p>Substrate-neutral evaluation framework establishing 11 points of verified physiological analogy and causal organization.</p>
     </a>
 
   </div>
@@ -376,7 +381,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     font-size: 1.05rem;
   }
 
-  /* --- QUOTE CALLOUT --- */
+  /* --- QUOTE & GRAPHIC SPLIT --- */
+  .quote-graphic-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin: 60px 0;
+  }
+
   .manifesto-quote {
     border-left: 4px solid #d4af37;
     background: #080d1a;
@@ -384,8 +397,36 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     font-size: 1.4rem;
     font-style: italic;
     color: #ffffff;
-    margin: 60px 0;
     border-radius: 0 8px 8px 0;
+    margin: 0; /* Margin removed to let the parent grid handle spacing */
+  }
+
+  .criteria-chart {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    display: block;
+    /* New animation and positioning rules */
+    position: relative;
+    z-index: 1;
+    cursor: zoom-in;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
+  }
+
+  /* The Hover State */
+  .criteria-chart:hover {
+    transform: scale(1.8); /* Increases size by 80% */
+    z-index: 100; /* Forces the enlarged image above the quote and background */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 229, 255, 0.3);
+  }
+
+  /* Stack them neatly on mobile screens */
+  @media (max-width: 900px) {
+    .quote-graphic-split {
+      grid-template-columns: 1fr;
+    }
   }
 
   /* --- KNOCKOUT VIDEO MASK --- */
